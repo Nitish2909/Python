@@ -312,4 +312,172 @@ print(keyword.kwlist)
 ```
 
 # Literals in python:
+Literals in Python are fixed values written directly in the code that represent constant data. They provide a way to store numbers, text, or other essential information that does not change during program execution. Python supports different types of literals, such as numeric literals, string literals, Boolean literals, and special values like None.
+<br>
+<b> For example:</b>
+
+```bash
+
+10, 3.14, and 5 + 2j are numeric literals.
+'Hello' and "Python" are string literals.
+True and False are Boolean liter.
+
+```
+
+<b><u>Types of Literals:</u></b>
+<br>
+
+<b>1. Numeric Literals:</b>
+
+<br>
+Numeric literals represent numbers and are classified into three types:
+
+1. Integer Literals -> Whole numbers (positive, negative, or zero) without a decimal point. 
+<br>
+Example: 10, -25, 0
+<br>
+
+2. Floating-point (Decimal) Literals -> Numbers with a decimal point, representing real numbers.
+<br>
+Example: 3.14, -0.01, 2.0
+<br>
+
+3. Complex Number Literals -> Numbers in the form a + bj, where a is the real part and b is the imaginary part.
+<br>
+Example: 5 + 2j, 7 - 3j
+<br>
+
+Example:
+
+```bash
+
+# Integer literals
+a = 100
+b = -50
+
+# Floating-point literals
+c = 3.14
+d = -0.005
+
+# Complex number literals
+e = 4 + 7j
+f = -3j
+
+print(a, b, c, d, e, f)
+
+```
+<br>
+
+<b>2. String Literals:</b>
+
+<br>
+String literals are sequences of characters enclosed in quotes. They are used to represent text in Python.
+<br>
+
+<b>Types of String Literals:</b>
+
+<br>
+1. Single-quoted strings ->  Enclosed in single quotes (' ').
+<br>
+ Example: 'Hello, World!'
+<br>
+
+2. Double-quoted strings -> Enclosed in double quotes (" ").
+<br>
+ Example: "Python is fun!"
+<br>
+
+3. Triple-quoted strings -> Enclosed in triple single (''' ''') or triple double (""" """) quotes, generally used for multi-line strings or docstrings.
+<br>
+ Example:
+'''This is
+a multi-line
+string'''
+<br>
+
+4. Raw strings -> Prefix with r to ignore escape sequences (\n, \t, etc.). Example: r"C:\Users\Python" (backslashes are treated as normal characters).
+<br>
+
+Example of String Literals:
+
+```bash
+
+# Different string literals
+
+a = 'Hello'      # Single-quoted
+b = "Python"     # Double-quoted
+
+c = '''This is 
+a multi-line string'''  # Triple-quoted
+
+d = r"C:\Users\Python"  # Raw string
+
+print(a)
+print(b)
+print(c)
+print(d)
+
+                  Output:
+                  Hello
+                  Python
+                  This is 
+                  a multi-line string
+                  C:\Users\Python
+```
+<br>
+
+<b>3. Boolean Literals:</b>
+
+<br>
+Boolean literals represent truth values in Python. They help in decision-making and logical operations. Boolean literals are useful for controlling program flow in conditional statements like if, while, and for loops.
+<br>
+Types of Boolean Literals:
+<br>
+True ->  Represents a positive condition (equivalent to 1)
+<br>
+False -> Represents a negative condition (equivalent to 0)
+<br><br>
+Example:
+
+```bash
+# Boolean literals
+a = True
+b = False
+
+print(a, b)       # Output: True False
+print(1 == True)  # Output: True
+print(0 == False) # Output: True
+print(True + 5)   # Output: 6 (1 + 5)
+print(False + 7)  # Output: 7 (0 + 7)
+
+```
+<br>
+
+<b>4. Collection Literals:</b>
+
+<br>
+Python provides four different types of literal collections:
+<br>
+1. List literals: [1, 2, 3]
+<br>
+2. Tuple literals: (1, 2, 3)
+<br>
+3. Dictionary literals: {"key": "value"}
+<br>
+4. Set literals: {1, 2, 3}
+<br><br>
+Example:
+
+```bash
+Rank = ["First", "Second", "Third"]  # List
+
+colors = ("Red", "Blue", "Green")  # Tuple
+
+Class = { "Jai": 10, "Anaya": 12 }  # Dictionary
+
+unique_num = {1, 2, 3}  # Set
+
+print(Rank, colors, Class, unique_num)
+
+```
 
