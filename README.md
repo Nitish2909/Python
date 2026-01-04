@@ -656,3 +656,197 @@ not in	         Returns True if a sequence with the specified value
                   is not present in the object	                            5 not in [1,2,3]
 
 ```
+
+# String in Python:
+Strings are a data type in python that is used to represent collections of characters.String is a sequence of character that are enclosed in Single-quotes,Double-quotes,Triple-quotes.
+<br>
+Strings are immutable means once a string is created that cannot be changed. 
+
+Example:
+
+```bash
+
+fname="Nitish"
+lastName="Kumar"
+
+print(fname+" "+lastName)
+
+```
+
+<b>Indexing :</b> Indexing is used to access individual characters or elements of a sequence (like string, list, tuple) using their position number.
+<br>
+
+Example:
+
+```bash
+
+text ="Python"
+
+ Index  0  1  2  3  4  5 
+
+ Char   P  y  t  h  o  n
+ 
+ 
+# How to access character using Indexing
+
+text="Python"
+
+print(text[4])
+
+ ```
+<b> String operators:</b>
+
+```bash
+
+Operator	       Use           	Example
+
+   +	     Concatenation	   "Hi" + " All"
+
+   *	     Repetition	      "Hi" * 3
+
+   in	    Membership	        "P" in "Python"
+
+```
+<br>
+ Example:
+
+ ```bash
+ fname="Nitish"
+lastName="Kumar"
+
+print(fname+" "+lastName)  # concatenation
+
+print(fname*3)     # Repetaion
+
+print("N" in fname)   # Membership
+
+```
+<br>
+<b>Slicing:</b>A string in python can be sliced for getting a part of the strings.
+
+```bash
+
+# syntax:
+
+slice= name[index_start : index_end]
+
+index_start -> first index included
+index_end -> last index is not included
+
+
+# Example:
+text="Hello World"
+
+print(text[0:4])   # start from index 0 all the way till 4 (excluding index 5)
+
+
+```
+
+<b>Common String Methods:</b>
+
+```bash
+Method	             Description
+
+upper()	          Convert to uppercase
+
+lower()	          Convert to lowercase
+
+capitalize()	    First letter capital
+
+title()	          Capitalize each word
+
+strip()	          Remove spaces
+
+replace()        	Replace text
+
+split()	         Split string
+
+find()	         Find substring
+
+len()	            Length of string
+
+```
+<br>
+Example:
+
+```bash
+msg= " hello world from python"
+
+print(msg.upper())  #uper()
+
+print(msg.lower())  #lower()
+
+print(len(msg))  #len()
+
+print(msg.title())  #title()
+
+print(msg.capitalize())  #captalize()
+
+print(msg.strip())  #strip()
+
+print(msg.find("python"))  #find()
+
+```
+
+# Input and Output Statements:
+In Python, input and output statements are used to take data from the user and display results on the screen. They are very important for writing interactive programs.
+<br>
+
+<b>input statements:</b>
+
+<br>
+An input statement is used to accept data (taking input) from the user at runtime.
+<br>
+Python uses the input() function to take input from users.
+<br>
+The data entered by the user is always in string format, so we must convert it when needed.
+<br>
+
+<b>Syntax:</b>
+
+```bash
+variable = input("Message to user")
+
+```
+<br>
+Example:
+
+```bash
+name = input("Enter your name: ")
+print("Hello", name)
+
+```
+<br>
+
+<b>Input with Type Conversion:</b>
+
+```bash
+age = int(input("Enter your age: "))
+print("Your age is", age)
+
+
+# int() → converts input to integer
+#float() → converts input to decimal number
+
+```
+<br>
+
+<b>Output Statements:</b>
+ An output statement is used to display information or result on the screen.
+ <br>
+ Python uses the print() function for output.
+<br><br>
+ Syntax:
+
+ ```bash
+print(value)
+print(value1, value2)
+
+
+#Example: 
+
+print("Hello World")
+
+```
+
+
