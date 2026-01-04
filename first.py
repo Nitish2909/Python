@@ -32,6 +32,32 @@
 
 # print(keyword.kwlist)
 
+#operators
+
+#Arithmetic operator
+# a=20
+
+# b=4
+
+# print(a+b)
+# print(a-b)
+# print(a*b)
+# print(a/b)
+# print(a%b)
+# print(a//b)
+# print(a**b)
+
+
+# bitwise operator
+a = 10
+b = 4
+
+print(a & b)   #AND
+print(a | b)   #OR
+print(~a)      
+print(a ^ b)
+print(a >> 2)
+print(a << 2)
 
 
 

@@ -334,17 +334,17 @@ Numeric literals represent numbers and are classified into three types:
 
 1. Integer Literals -> Whole numbers (positive, negative, or zero) without a decimal point. 
 <br>
-Example: 10, -25, 0
+   Example: 10, -25, 0
 <br>
 
 2. Floating-point (Decimal) Literals -> Numbers with a decimal point, representing real numbers.
 <br>
-Example: 3.14, -0.01, 2.0
+   Example: 3.14, -0.01, 2.0
 <br>
 
 3. Complex Number Literals -> Numbers in the form a + bj, where a is the real part and b is the imaginary part.
 <br>
-Example: 5 + 2j, 7 - 3j
+  Example: 5 + 2j, 7 - 3j
 <br>
 
 Example:
@@ -379,20 +379,20 @@ String literals are sequences of characters enclosed in quotes. They are used to
 <br>
 1. Single-quoted strings ->  Enclosed in single quotes (' ').
 <br>
- Example: 'Hello, World!'
+   Example: 'Hello, World!'
 <br>
 
 2. Double-quoted strings -> Enclosed in double quotes (" ").
 <br>
- Example: "Python is fun!"
+   Example: "Python is fun!"
 <br>
 
 3. Triple-quoted strings -> Enclosed in triple single (''' ''') or triple double (""" """) quotes, generally used for multi-line strings or docstrings.
 <br>
- Example:
-'''This is
-a multi-line
-string'''
+   Example:
+   '''This is
+   a multi-line
+   string'''
 <br>
 
 4. Raw strings -> Prefix with r to ignore escape sequences (\n, \t, etc.). Example: r"C:\Users\Python" (backslashes are treated as normal characters).
@@ -480,4 +480,179 @@ unique_num = {1, 2, 3}  # Set
 print(Rank, colors, Class, unique_num)
 
 ```
+# Operator :
+In Python programming, Operators are used to perform operations on values and variables.
+<br>
+Operators: Special symbols like -, + , * , /, etc.
+<br>
+Operands: Value on which the operator is applied.
+<br>
 
+<b>Types of operators:</b>
+<br>
+<b>1. Arithmetic operators</b> -> Arithmetic operators are used to perform mathematical operations on numeric values.
+ 
+```bash
+Operator     	Name        	Example	
+
++	          Addition	       x + y	
+
+-	         Subtraction    	 x - y	
+
+*	        Multiplication   	 x * y
+
+/  	      Division           x / y
+
+%	         Modulus	          x % y
+
+**     	Exponentiation      	x ** y
+
+//	       Floor division	   x // y
+
+```
+<br>
+Example:
+
+```bash
+a=20
+                               
+b=4
+
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a%b)
+print(a//b)
+print(a**b)
+
+```
+<br>
+<b>2.Assignment operators</b> -> Assignment operators are used to assign values to a variable.
+  
+```bash
+Operator	      Example	   Same As
+
+ =	             x = 5	   Assign
+
++=	            x += 3	   x = x + 3
+
+-=	            x -= 2	   x = x - 2
+
+*=	            x *= 2	   x = x * 2
+
+/=	            x /= 2      x = x / 2
+
+```
+<b>3.Comparison / Relation operators</b> -> Comparison operators are used to compare two values and return a Boolean values.
+
+```bash
+
+Operator         	Meaning      	    Example
+
+   ==	            Equal to	           5 == 5
+
+   !=	            Not equal	        5 != 3
+
+   >	            Greater than	     5 > 3
+
+   <	            Less than	        5 < 3
+
+   >=	            Greater or equal	  5 >= 5
+
+   <=	            Less or equal	     5 <= 3
+```   
+
+<b>4.Logical operators</b> -> Logical operators are used to combine conditional statements.
+
+```bash
+
+Operator	                Meaning   	                                     Example	
+
+and 	          Returns True if both statements are true	              x < 5 and  x < 10	
+
+or	           Returns True if one of the statements is true	           x < 5 or x < 4	
+
+not	     Reverse the result, returns False if the result is true	  not(x < 5 and x < 10)
+
+```
+
+<b>5.Bitwise operators</b> -> Bitwise operators are used to compare (binary) numbers.
+
+```bash
+   Operator	   Name	                               Meaning     	                                Example
+
+   &           AND	             Sets each bit to 1 if both bits are 1	                     x & y	
+
+   |	          OR	             Sets each bit to 1 if one of two bits is 1	               x | y	
+
+   ^	         XOR	             Sets each bit to 1 if only one of two bits is 1	         x ^ y	
+
+   ~	         NOT	             Inverts all the bits	                                      ~x	
+   <<	    Zero fill left shift	 Shift left by pushing zeros in from the right and let 
+                                  the leftmost bits fall off	                               x << 2	
+   >>	    Signed right shift	    Shift right by pushing copies of the leftmost bit in from 
+                                  the left, and let the rightmost bits fall off	              x >> 2
+```
+Example:
+
+```bash
+# The & operator compares each bit and set it to 1 if both are 1, otherwise it is set to 0
+# 6 = 0110
+# 3 = 0011
+# --------
+# 2 = 0010
+
+print(6 & 3)
+                      
+                       output:
+                       2
+```
+
+<b>6. Identity operators</b> -> Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location.
+
+```bash
+Operator                    	Meaning               	                           Example	
+
+is 	              Returns True if both variables are the same object	         x is y	
+
+is not	          Returns True if both variables are not the same object	      x is not y
+
+```
+Example:
+
+```bash
+
+# is
+
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+z = x
+
+print(x is z)     #True
+print(x is y)     #False
+print(x == y)     #True
+
+
+# is not 
+
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+
+print(x is not y)    #True
+
+```
+
+<b>7.Membership operators</b> -> Check if a value exists in a sequence.
+
+```bash
+
+Operator          Meaning     	                                        Example
+
+in               	Returns True if a sequence with the specified
+                  value is present in the object                          'a' in "apple"
+
+not in	         Returns True if a sequence with the specified value 
+                  is not present in the object	                            5 not in [1,2,3]
+
+```
