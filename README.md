@@ -1232,7 +1232,7 @@ else:
 <br>
 important point about elif:
 <br>
-2. There can be any number of elif statements.
+1. There can be any number of elif statements.
 <br><br>
 2. Last else is executed only if all the conditions inside elifs fail.
 <br>
@@ -1320,13 +1320,133 @@ if a > 5: print("Greater than 5")
 ```
 <br>
 
-6. <b>Short-hand if–else (Ternary Operator):</b>
+6. <b>Short-hand if-else (Ternary Operator):</b>
 
 ```bash
 a = 3
 print("Even") if a % 2 == 0 else print("Odd")
 
 ```
+# Loops:
+Loops in Python are used to repeat a block of code multiple times until a condition is met or satisfied.
+<br>
+
+<b>Types of Loops :</b>
+<br>
+There are mainly two types of loops:
+<br>
+
+1. while Loop
+<br><br>
+2. for Loop
+<br>
+
+1. <b>while loop:</b> This loop is used when the number of iterations is not known.
+<br>
+
+<b>Syntax:</b>
+
+```bash
+while (condition):   # The block keeps executing until the condition is true
+    statement
+
+
+```
+<br>
+In while loops, the condition is checked first. If it evaluates to true, the body of the loop
+is executed otherwise not!
+<br><br>
+If the loop is entered, the process of [condition check & execution] is continued until
+the condition becomes False
+
+<b>Example:</b>
+
+```bash
+
+# print 1 to 20 
+
+i =0
+while(i<=20):
+    print(i)
+    i = i+1
+    
+```
+2. <b>For Loop :</b> This loop is used when the number of iterations is known.
+<br>
+
+<b>Syntax:</b>
+
+```bash
+for variable in sequence:
+    statements
+```
+<br>
+
+<b>Example:</b>
+
+```bash
+
+fruits = ["apple","mango","banana","papaya","pineapple"]
+
+for fruit in fruits:
+    print(fruit)
+```
+
+# Range function in python:
+The range() function is used to generate a sequence of numbers.It is mainly used with for loops.
+<br>
+range() returns a sequence of numbers starting from a given value up to (but ending value not including) the ending value.
+<br>
+
+<b>Syntax:</b>
+
+```bash
+range(start, stop, step)           # Meaning
+                                   start -> Starting value (default = 0)
+
+                                   stop -> Ending value (not included)
+
+                                   step -> Difference between numbers (default = 1)
+
+```
+<br>
+
+<b>Example:</b>
+
+```bash
+for num in range(1 ,10):
+
+    print(num)   # prints 1 to 9
+
+```
+
+# FOR LOOP WITH ELSE :
+An optional else can be used with a for loop if the code is to be executed when the
+loops exhausts.
+<br>
+
+<b>Example:</b>
+
+```bash
+
+l= [1,7,8]
+
+for item in l:
+print(item)
+
+else:
+print("done") # this is printed when the loop exhausts!
+
+
+                  Output:
+                  1
+                  7
+                  8
+                  done
+
+```
+     
+
 
 
 
