@@ -145,8 +145,138 @@
 # print(text[0:4]) # start from index 0 all the way till 4 (excluding index 5)
 
 
-fruitsname = str(input("Enter 7 Fruits Name:"))
-print([fruitsname])
+
+# number =[1,2,4,5,3,2,3,5,8]
+
+# # print(number[1:6])  #[2, 4, 5, 3, 2]
+
+# # print(number[0:4])   #[1, 2, 4, 5]
+
+# number.append(23)  #append()
+# number.insert(2,3)  #insert()
+# number.extend([123,22]) #ectend()
+# print(number)
+
+
+
+# #tuple
+
+# num=(12,23,45,43,22,1,3,5,2,"hello")
+
+# print(num[0])
+
+# #tuple slicing
+
+# print(num[2:5])
+
+# num=(12,23,45,43,2,2,2,2,2,5,5,4,4,4,4,22,1,3,5,2,"hello")
+
+# count = num.count(4)
+
+# print(count)
+
+
+
+# #dictionary
+
+# students ={
+#     "name":"Nitish",
+#     "age":21,
+#     "class": "BCA",
+#     "RollNo":36
+# }
+
+# print(students["name"]) # accessing name 
+
+# print(students.get("age")) # accessing dictionary by using get method
+
+# # how add elements in dictionary
+# students["State"] ="Haryana"
+# print(students)
+
+# # how to updates elements in dictionary
+
+# students["age"]=22
+# print(students)
+
+
+
+#SETS
+
+# # how to create sets:
+# mysets = {1,2,3,7,8,9,4,3,5,6,7,8}
+# print(mysets)
+
+# #How to create an empty sets:
+# sts = set()
+# print(type(sts))
+
+# # how to add an elements:
+# mysets.add(234)
+# print(mysets)
+
+# # add multiple elements in sets:
+
+# mysets.update([123,345,678,890])
+# print(mysets)
+
+
+# operation on sets:
+
+# # Union  -> It combines both sets in single one.
+
+# set1 ={12,13,14,15,16}
+
+# set2 ={1,2,3,4,5,6,7,8,9,10,11}
+
+# print(set1 | set2)
+
+
+# # Intersection   ->  It searches common elements in both sets
+
+# set1 ={12,13,1,15,16,4,6,7,2}
+
+# set2 ={1,2,3,4,5,6,7,8,9,10,11}
+
+# print(set1 & set2)
+
+
+# # Difference ->
+
+# set1 ={12,13,1,15,16,4,6,7,2}
+
+# set2 ={1,2,3,4,5,6,7,8,9,10,11}
+
+# print(set1 - set2)
+
+
+# mysets = {1,2,3,7,8,9,4,3,5,6,7,8}
+# print(mysets.pop())
+
+# # Question:
+# s = set()
+# s.add(20)
+# s.add(20.0)
+# s.add("20")
+# s.add(0.20)
+
+# print(s)
+
+
+
+# condition Statements:
+
+#  Write a program to print yes when the age entered by the user is greater than or equal to 18.
+
+age = int(input("Enter your age:"))
+
+if(age >= 18):
+    print("yes")
+
+else:
+    print("No ")
+   
+
 
 
 

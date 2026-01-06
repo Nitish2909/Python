@@ -848,5 +848,333 @@ print(value1, value2)
 print("Hello World")
 
 ```
+# List:
+In Python a list is a versatile data structure that allow you to store and organize multiple items in a single variable.Lists are defined by enclosing a sequence of elements within a square bracket and seprating them with commas.
+<br>
+Lists are ordered, mutable (changeable), and can store different data types.
+<br><br>
+Example:
+
+```bash
+numbers = [10, 20, 30, 40]
+
+names = ["Ram", "Shyam", "Mohan"]
+
+mixed = [1, "Python", 3.5, True]
+
+```   
+<br>
+
+<b>List Indexing:</b>
+<br>
+A list can be indexed just like string.
+<br>
+
+```bash
+number =[1,2,4,5,3,2,3,5,8]
+
+print(number[1])
+
+```
+<br>
+
+<b> List Slicing:</b>
+
+```bash
+number =[1,2,4,5,3,2,3,5,8]
+
+print(number[1:6])  #[2, 4, 5, 3, 2]
+
+print(number[0:4])   #[1, 2, 4, 5]
+
+```
+<b>Adding Elements to List</b>
+
+```bash
+   Method	        Use	                  Example
+
+   append()	      Add one element	   list.append(50)
+
+   insert()	      Add at position	   list.insert(1, 15)
+
+   extend()	      Add multiple	      list.extend([60,70])
+```
+<br>
+
+Example:
+
+```bash
+number =[1,2,4,5,3,2,3,5,8]
+
+number.append(23)  #append()
+number.insert(2,3)  #insert()
+number.extend([123,22]) #ectend()
+print(number)
+
+```
+<b>LIST METHODS:</b>
+
+<br>
+Consider the following list:
+
+```bash
+l1 = [1,8,7,2,21,15]
+• l1.sort(): updates the list to [1,2,7,8,15,21]
+
+• l1.reverse(): updates the list to [15,21,2,7,8,1]
+
+• l1.append(8): adds 8 at the end of the list
+
+• l1.insert(3,8): This will add 8 at 3 index
+
+• l1.pop(2): Will delete element at index 2 and return its value.
+
+• l1.remove(21): Will remove 21 from the list. 
+```
+# Tuple:
+A tuple is an immutable ordered collection of elements enclosed in paranthesis (). It is used to stored related data that should not be modified. 
+<br>
+Tuples are immutable, meaning their values cannot be changed after creation.
+<br><br>
+Example:
+
+```bash
+t1 = (10, 20, 30)
+
+t2 = ("Ram", "Shyam", "Mohan")
+
+t3 = (1, "Python", 3.5)
+
+```
+<b>Common Tuple Functions</b>
+
+```bash
+      Function	        Use
+
+      len()	          Length
+
+      max()	          Largest
+
+      min()	          Smallest
+
+      sum()	           Total
+
+      count()	       Count value
+
+      index()	      Find position
+```
+
+# Dictionary in Python:
+A dictionary in Python is a collection of data stored in key-value pairs.
+<br>
+Each key is unique and is used to access its value.
+<br>
+Dictionaries are unordered, mutable (changeable), and written using curly braces { }.
+<br>
+
+syntax:
+
+```bash
+
+dictionary_name = {
+    key1: value1,
+    key2: value2
+}
+
+```
+<br>
+
+Example:
+
+```bash
+students ={
+    "name":"Nitish",
+    "age":21,
+    "class": "BCA",
+    "RollNo":36
+}
+```
+
+Accessing dictionary values:
+
+```bash
+
+print(students["name"])
+
+
+# Accessing by using get method also.
+
+print(students.get("age"))
+
+
+# how add elements in dictionary
+students["State"] ="Haryana"
+print(students)
+
+
+# how to updates elements in dictionary
+students["age"]=22
+print(students)
+
+
+```
+<br>
+
+<b>Removing Items:</b>
+
+```bash
+student.pop("course")   # removes specific key
+del student["age"]      # deletes key-value pair
+student.clear()         # removes all items
+
+```
+<br>
+
+<b>Method	Description</b>
+
+```bash
+
+clear()	  ->   Removes all the elements from the dictionary.
+
+copy()	  ->   Returns a copy of the dictionary.
+
+fromkeys()	 ->  Returns a dictionary with the specified keys and value.
+
+get()	      ->  Returns the value of the specified key.
+
+items()	  ->   Returns a list containing a tuple for each key value pair.
+
+keys()	   ->  Returns a list containing the dictionary's keys.
+
+pop()	      ->  Removes the element with the specified key.
+
+popitem()	  -> Removes the last inserted key-value pair.
+
+setdefault()   ->	Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+
+update()	 -> Updates the dictionary with the specified key-value pairs.
+
+values()  ->	Returns a list of all the values in the dictionary.
+
+```
+
+# Sets:
+A set in Python is a collection of unique elements.
+<br>
+It is unordered, mutable, and does not allow duplicate values.
+<br>
+
+Syntax:
+
+```bash
+
+set_name = {value1, value2, value3}
+
+```
+Example:
+
+```bash
+numbers = {1, 2, 3, 4, 5}
+print(numbers)
+
+```
+<br>
+
+<b>PROPERTIES OF SETS</b>
+
+```bash
+1. Sets are unordered => Element's order doesn't matter.
+2. Sets are unindexed => Cannot access elements by index
+3. There is no way to change items in sets.
+4. Sets cannot contain duplicate values.
+
+```
+<br>
+
+<b>some important points with example:</b>
+
+```bash
+# how to create sets:
+mysets = {1,2,3,7,8,9,4,3,5,6,7,8}
+print(mysets)
+
+#How to create an empty sets:
+sts = set()
+print(type(sts))
+
+# how to add an elements:
+mysets.add(234)
+print(mysets)
+
+# add multiple elements in sets:
+
+mysets.update([123,345,678,890])
+print(mysets)
+
+```
+<br>
+
+<b>Operation on Sets:</b>
+
+```bash
+
+# Union  -> It combines both sets in single one.
+
+set1 ={12,13,14,15,16}
+
+set2 ={1,2,3,4,5,6,7,8,9,10,11}
+
+print(set1 | set2)
+
+
+# Intersection   ->  It searches common elements in both sets
+
+set1 ={12,13,1,15,16,4,6,7,2}
+
+set2 ={1,2,3,4,5,6,7,8,9,10,11}
+
+print(set1 & set2)
+
+
+# Difference -> It returns elements that are present in the first set but NOT in the second set.
+
+set1 ={12,13,1,15,16,4,6,7,2}
+
+set2 ={1,2,3,4,5,6,7,8,9,10,11}
+
+print(set1 - set2)
+
+```
+<br>
+
+<b>Set Methods:</b>
+
+```bash
+
+Method	           Use
+
+add()            	Add element
+
+update()	         Add multiple elements
+
+remove()	         Remove element
+
+discard()	      Remove without error
+
+union()	         Combine sets
+
+intersection()	    Common elements
+
+difference()	    Remaining elements
+
+clear()	          Empty set
+ 
+```
+
+
+
+
+
+
 
 
