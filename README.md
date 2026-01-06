@@ -1171,8 +1171,162 @@ clear()	          Empty set
  
 ```
 
+# Conditional Statements:
+Conditional statements are used to make decisions in a program.
+They allow the program to execute different blocks of code based on a condition.
+<br>
 
+1.<b>If Statements:</b> The if Statements is used in python to Executes a block of code only if the condition is true.
+<br>
 
+Syntax:
+
+```bash
+
+if condition:
+    statement
+
+```
+<br>
+
+Example:
+
+```bash
+age = 20
+if age >= 18:
+    print("Eligible to vote")
+
+```
+<br>
+
+2.<b>If else</b> : The if else statements in python provides a way to perform different action based on a evaluation of a condition. It allows us to executes first block of code if condition is true and executes another block if condition is false.
+<br>
+
+<b>Syntax:</b>
+
+```bash
+
+if condition:
+    statement
+else:
+    statement
+
+```
+<br>
+
+<b>Example:</b>
+
+```bash
+age=20
+
+if(age>=18):
+    print("Your are Eligible to vote ")
+
+else:
+    print("Your are not Eligible to vote")
+
+```
+<br>
+
+3.<b>If-elif-else :</b> This Statements is used when there are multiple condition.
+<br>
+important point about elif:
+<br>
+2. There can be any number of elif statements.
+<br><br>
+2. Last else is executed only if all the conditions inside elifs fail.
+<br>
+
+<b>Syntax:</b>
+
+```bash
+if condition1:
+    statement
+elif condition2:
+    statement
+else:
+    statement
+```
+<br>
+
+<b>Example:</b>
+
+```bash
+
+# if-elif-else:
+
+marks =75
+
+if(marks >=90):
+    print("Grade A")
+
+elif(marks >=60):
+    print("Grade B")
+
+else:
+    print("Grade C")
+   
+```
+
+4.<b>Nested if statement:</b> An if statement inside another if statement in this condition we can say that it is a Nested if statement.
+<br>
+
+<b>Syntax:</b>
+
+```bash
+
+if condition1:
+     statement
+
+      if condition2:
+          statement
+
+      else:
+
+else:
+
+```
+<br>
+
+<b>Example:</b>
+
+```bash
+
+age = int(input("Enter Your Age :"))
+salary= int(input("Enter Your Salary :"))
+
+if(age >=18):
+    {
+           print("Eligible")
+    }
+
+    if(salary >=40000):
+        {
+            print("You are Eligible for Loan ")
+        }
+    else:
+        {
+            print("Not Eligible for Loan")
+        }
+else:
+    print("Your Not Eligible")
+
+```
+5.<b>Short-hand if (One-line if)</b>
+
+```bash
+a = 10
+if a > 5: print("Greater than 5")
+```
+<br>
+
+6. <b>Short-hand if–else (Ternary Operator):</b>
+
+```bash
+a = 3
+print("Even") if a % 2 == 0 else print("Odd")
+
+```
 
 
 
