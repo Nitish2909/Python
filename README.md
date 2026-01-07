@@ -1445,10 +1445,152 @@ print("done") # this is printed when the loop exhausts!
                   done
 
 ```
-     
+
+# Break statements :
+The break statement is a loop control statement used to terminate (stop) a loop immediately, even if the loop condition is still true.
+<br>
+
+Example:
+
+```bash
+# break in for Loop
+
+for i in range(1,8):
+    if i==5:
+        break
+    print(i)
+
+```
+
+# continue statements:
+The continue statement is a loop control statement used to skip the current iteration of a loop and move to the next iteration.
+<br>
+
+<b>Example:</b>
+
+```bash
+   
+for i in range(1,8):
+    if i==5:
+        continue     # by using this statements it skip 5 
+    print(i)
+ 
+
+               output :
+               it print 1 ,2 ,3 ,4 ,6 ,7
+               
+```
+# Pass statement :
+The pass statement is used as a placeholder where a statement is required but no operation is to be performed.
+<br>
+
+<b>Example:</b>
+
+```bash
+
+for i in range(5):
+    pass
+
+           # loop run but does nothing
 
 
+```
+
+# Function in Python:
+A function is a block of reusable code that performs a specific task.
+It runs only when it is called and helps in reducing and avoiding code repetition.
+In Simple Word we can say that a function is a block of code that perform a specific task.
+<br>
+
+<b>Creating a function:</b>
+<br>
+In Python, a function is defined by using "def" keyword and function name  and paranthesis.
+<br>
+
+```bash
+# function definition
+def my_function():
+    print("Hello from a function")
+
+# function call
+my_function()
 
 
+#The code inside the function must be indented. Python uses indentation to define code blocks.
+
+```
+<br>
+
+<b>Why we use Function:</b>
+
+```bash
+
+Reuse code
+
+Reduce repetition
+
+Make programs easy to understand
+
+Improve modularity
+
+Easy to maintain and debug
+
+```
+<br>
+
+<b>Function Name Rules:</b>
+
+```bash
+Function names follow the same rules as variable names in Python:
+
+        A function name must start with a letter or underscore.
+        A function name can only contain letters, numbers, and underscores.
+        Function names are case-sensitive (myFunction and myfunction are different).
+
+```
+<br>
+
+<b>Types Of Function :</b>
+<br>
+There are two types of function:
+<br>
+<br>
+1. <b>Built-in function :</b> print() , len() , input().
+<br><br>
+2. <b>User-defined function :</b> This type of function is created by programmers.
+<br>
+
+<b>FUNCTION DEFINITION :</b>
+The part containing the exact set of instructions which are executed during the function call.
+<br>
+
+<b> FUNCTION CALL :</b>
+Whenever we want to call a function, we put the name of the function followed by parentheses as follows:
+<br>
+
+```bash
+func1() # This is called function call
+
+```
+<br>
+
+<b>Defalut parameters value :</b>
+A default parameter value is a value given to a function parameter at the time of function definition.
+<br>
+If no argument is passed during the function call, the default value is used automatically.
+<br>
+
+```bash
+def greet(name="Guest"):
+    print("Hello", name)
+
+greet("Nitish")
+greet()
 
 
+                    output:
+                    Hello Nitish
+                    Hello Guest
+
+
+```
