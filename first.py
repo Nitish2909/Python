@@ -273,13 +273,14 @@
 # my_function()
 
 
-# funtion definition
-def add(a,b):       # a and b are parameters
-    return a+b
-result = add(4,55)   
+# # funtion definition
+# def add(a,b):       # a and b are parameters
+#     return a+b
+# result = add(4,55)   
 
 
-print(result)   # function call
+# print(result)   # function call
+
 
 
 

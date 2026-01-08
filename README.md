@@ -1594,3 +1594,164 @@ greet()
 
 
 ```
+# Recursion in Python:
+Recursion is a technique in which a function calls itself to solve a problem by breaking it into smaller subproblems.
+<br>
+In Simple world we can say that Recursion is a process where a function calls itself until a base condition is met.
+<br>
+
+<b>Every recursive function have two parts:</b>
+<br>
+
+```bash
+
+1. Base Case => Condition where the function stops calling itself.
+
+2. Recursive case => The function calls itself with a smaller problem.
+
+<br>
+It is used to directly use a mathematical formula as function. 
+<br>
+Example of using mathematical formula:
+
+```bash
+factorial(n) = n x factorial (n-1)
+```
+<br>
+
+
+
+<b>Example of recursion</b>
+
+```bash
+
+def factorial(n):    
+
+    if(n==0 or n==1 ):       # Base case 
+        return 1
+    return n * factorial(n-1)   # recursive case because it call itself .
+
+n= int(input("Enter a Number :"))
+
+print(" Factorial of given numbers is ",factorial(n))
+
+```
+<br>
+
+<b>How factorial(5) works (Step by Step) :</b>
+
+```bash
+
+factorial(5)
+= 5 * factorial(4)
+= 5 * 4 * factorial(3)
+= 5 * 4 * 3 * factorial(2)
+= 5 * 4 * 3 * 2 * factorial(1)
+= 5 * 4 * 3 * 2 * 1
+= 120
+
+```
+<br>
+
+<b>fibonacci series :</b> The Fibonacci series is a sequence of numbers where each number is the sum of the previous two numbers.
+<br>
+
+```bash
+
+Series:
+0, 1, 1, 2, 3, 5, 8, 13, 21, ...
+
+Formula:
+
+F(n) = F(n-1) + F(n-2)
+
+```
+<br>
+
+<b>Example:</b>
+
+```bash
+
+def fibonacci(n):
+      
+      if( n ==0):  # base case
+            return 0
+      elif(n==1):  # base case
+            return 1
+      else:
+        return fibonacci(n-1) + fibonacci(n-2)   # recursive case
+
+n= int(input("Enter a Number :"))
+
+for i in range(n):
+
+ print(fibonacci(i) , end="")
+
+```
+<br>
+
+<b>Dry run of this code:</b>
+
+```bash
+
+Assume input :
+
+Enter Number : 5
+
+range(n) -> range(5) -> i = 0, 1, 2, 3, 4
+
+
+Iteration 1 :
+
+i = 0
+fibonacci(0) -> base case -> return 0
+Printed: 0
+
+Iteration 2 :
+
+i = 1
+fibonacci(1) -> base case -> return 1
+Printed: 1
+
+Iteration 3 :
+
+i = 2
+fibonacci(2)
+= fibonacci(n-1) + (n-2)
+= fibonacci(2-1) + (2-2)
+= fibonacci(1) + fibonacci(0)
+= 1 + 0
+= 1
+Printed: 1
+
+Iteration 4 :
+
+i = 3
+fibonacci(3)
+= fibonacci(n-1) + (n-2)
+= fibonacci(3-1) + (3-2)
+= fibonacci(2) + fibonacci(1)
+= 1 + 1
+= 2
+Printed: 2
+
+Iteration 5 :
+
+i = 4
+fibonacci(4)
+= fibonacci(n-1) + (n-2)
+= fibonacci(4-1) + (4-2)
+= fibonacci(3) + fibonacci(2)
+= 2 + 1
+= 3
+Printed: 3
+
+
+                            output :
+                            0 1 1 2 3
+
+```
+
+
+
+
