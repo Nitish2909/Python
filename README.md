@@ -1752,6 +1752,207 @@ Printed: 3
 
 ```
 
+# OOP in Python:
+ OOP stands for Object-Oriented Programming. <br>
+ Python is an object-oriented language, allowing you to structure your code using classes and objects for better organization and reusability.
+<br>
+
+```bash
+Advantages of OOP:
+
+Provides a clear structure to programs.
+
+Makes code easier to maintain, reuse, and debug.
+
+Helps keep your code DRY (Don't Repeat Yourself).
+
+Allows you to build reusable applications with less code. 
+
+         The DRY principle means you should avoid writing the same code more than once. Move repeated code into functions or classes and reuse it.
+
+```
+<br>
+
+1. <b>Class and Object:</b>
+<br>
+
+<b>Class :</b> A class is a blueprint / design /template  for creating an object.It defines properties(attributes) and behaviour(methods) that object of this class will have.
+<br>
+When a class is created it does not occupy memory itself.
+<br>
+
+<b>Object :</b> An object is a real world entity created by using a class.It occupies memory and can be used in a program.
+
+Example:
+
+```bash
+
+class Myclass:  
+    # This is a class named Myclass
+    # A class is a blueprint or template
+
+    name = "Nitish Kumar"   # Class attribute (shared by all objects)
+    language = "python"     # Class attribute
+    rollNo = 35             # Class attribute
 
 
+# Creating an object (instance) of Myclass
+obj = Myclass()  
+# obj is now an instance (object) of the class Myclass
+# Memory is allocated for this object
 
+
+# Accessing class attributes using the object
+print(obj.name, obj.rollNo)
+
+```
+<br>
+
+<b>Working of Above Example :</b>
+
+```bash
+
+Step 1: Class Definition
+
+class Myclass:
+
+
+- Python creates a class named Myclass
+
+- No memory is allocated yet for objects
+
+- Only the structure is defined
+
+
+Step 2: Class Attributes
+
+name = "Nitish Kumar"
+language = "python"
+rollNo = 35
+
+
+- These are class variables (attributes)
+
+- They belong to the class, not to any specific object
+
+- All objects of Myclass can access these values
+
+
+Step 3: Object Creation (Instance Creation)
+
+obj = Myclass()
+
+
+- Myclass() creates a new object
+
+- obj stores the reference (address) of that object
+
+- This object is an instance of Myclass
+
+- Memory is allocated at runtime
+
+
+Step 4: Accessing Attributes Using Object
+
+print(obj.name, obj.rollNo)
+
+
+- Python looks for name inside the object
+
+- If not found, it checks the class
+
+- Finds name and rollNo in Myclass
+
+Prints the values
+
+```
+
+<b> SELF PARAMETER :</b>
+self refers to the instance of the class. It is automatically passed with a function call from an object.
+<br>
+It is used to access properties(attribute) and methods that belong to the class.
+<br>
+You can use any name as a function parameters in place of "self".
+
+Example :
+
+```bash
+
+class Students:
+    name="Nitish"
+    rollNo = 35
+    age=21
+    course="BCA"
+    
+    # This is fuction that takes "self " as a parameters
+    def greet(self):
+        print("Good Morning Everyone")
+
+s1 = Students()
+print(s1.name,s1.age,s1.course)
+
+s1.greet()
+
+```
+<b>Accessing Properties with self :</b>
+
+```bash
+# Accessing Properties with self
+
+
+class person:
+    def __init__(self,name,course,age,rollno):
+        self.name=name
+        self.course=course
+        self.age=age
+        self.rollno=rollno
+
+    def displayinfo(self):
+        print(f"{self.name} {self.course} {self.age} {self.rollno}")
+
+
+p1 = person("Nitish","BCA",21,24)
+
+p1.displayinfo()
+
+```
+<br>
+
+<b>STATIC METHOD</b>
+Sometimes we need a function that does not use the self-parameter. We can define a
+static method like this:
+<br>
+
+Example:
+
+```bash
+@staticmethod   # decorator to mark greet as a static method
+def greet():
+     print("Hello user")
+
+```
+
+<b>__init__ () Method :</b>
+__init__() is a special method which is first run as soon as the object is created. <br>
+__init__() method is also known as constructor.
+<br>
+It takes "self" argument and can also take further arguments.
+<br>
+
+Example:
+
+```bash
+
+
+class Employee:
+  
+  def __init__(self, name):
+       self.name=name
+
+  def getSalary(self):
+      print(f"{self.name}")
+      
+e1= Employee("Harry")
+e1.getSalary()
+
+```
