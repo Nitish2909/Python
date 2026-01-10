@@ -1938,6 +1938,8 @@ __init__() method is also known as constructor.
 <br>
 It takes "self" argument and can also take further arguments.
 <br>
+The __init__() function is called automatically every time the class is being used to create a new object. 
+<br>
 
 Example:
 
@@ -1954,5 +1956,402 @@ class Employee:
       
 e1= Employee("Harry")
 e1.getSalary()
+
+```
+# Inheritance :
+Inheritance means one class inherit or acquires the properties and methods of another class.
+<br>
+It helps in code reuse, reduces repetition, and makes programs easy to maintain.
+<br>
+
+<b>Basic Terms of inheritance :</b>
+
+```bash
+    Term	                                 Meaning
+
+Parent / Base class	     =>      Class whose properties are inherited.
+Child / Derived class    =>   	 Class that inherits from parent.
+Inheritance	             =>     Relationship between parent and child.
+
+```
+<br>
+
+<b>Syntax of inheritance :</b>
+
+```bash
+
+class Parent:
+    # parent class code
+
+class Child(Parent):
+    # child class code
+
+```
+<br>
+
+Example:
+
+```bash
+# Parent Class
+
+class Person:
+    def __init__(self,name,salary):
+        self.name= name
+        self.salary=salary
+
+    def showinfo(self):
+        print(f"{self.name} {self.salary}")    
+
+p1 = Person("Nitish",250000)
+p1.showinfo()
+
+
+# Child class
+
+class Employee(Person):
+    pass
+
+E = Employee("Rakesh",230000)
+E.showinfo()
+
+```
+<br>
+
+<b>What is the Use of "Pass" Keyword :</b>
+<br>
+The pass keyword  is used when you do not want to add any other properties or methods to the class.
+<br>
+
+<b> __init__() Function in inheritance :</b>
+<br>
+The __init__() function is called automatically every time the class is being used to create a new object.
+<br>
+
+```bash
+class Employee(Person):
+    def __init__(self, name, salary):
+        # add properties etc.
+
+```
+<br>
+When you add the __init__() function, the child class will no longer inherit the parent's __init__() function.
+<br><br>
+Because  The child's __init__() function overrides the inheritance of the parent's __init__() function.
+<br><br>
+To keep the inheritance of the parent's __init__() function, add a call to the parent's __init__() function:
+<br>
+
+```bash
+class Employee(Person):
+  def __init__(self, name, salary):
+    Person.__init__(self, name, salary)
+
+```
+<br>
+Now we have successfully added the __init__() function, and kept the inheritance of the parent class, and we are ready to add functionality in the __init__() function.
+<br>
+
+<b>Use of super() Function :</b>
+Python also has a super() function that will make the child class inherit all the methods and properties from its parent:
+<br>
+
+Example:
+
+```bash
+class Employee(Person):
+  def __init__(self, name, salary):
+    super().__init__(self, name, salary)
+
+
+    # By using super function no need to use parent class name.
+```
+<br>
+
+<b>Types of Inheritance :</b>
+<br>
+Python supports 5 types of inheritance:
+<br>
+
+1. <b>Single inheritance:</b>
+<br>
+In a single inheritance there is only one  parent and one child.
+<br>
+
+Syntax:
+
+```bash
+class Parent:
+    pass
+
+class Child(Parent):
+    pass
+
+```
+<br>
+
+Example:
+
+```bash
+# single inheritance
+
+class Parent:
+    def show(self,name):
+        self.name=name
+        print("This is a parent class")
+
+class Child(Parent):
+    def display(self):
+       print("This is a child class that inherit properties and methods from parent class")
+       print(f"{self.name}")
+
+c1 = Child()
+c1.show("Rakesh")
+c1.display()
+
+```
+<br>
+
+2. <b>Multiple inheritance :</b> 
+<br>
+In Multiple Inheritance there is one child class and two or more parent class.
+<br>
+
+Syntax:
+
+```bash
+class Parent1:
+    pass
+
+class Parent2:
+    pass
+
+class Child(Parent1, Parent2):
+    pass
+
+```
+<br>
+
+Example:
+
+```bash
+
+# Multiple inheritance
+
+class Parent1:
+    def show(self,name):
+        self.name=name
+        print("This is a parent class")
+
+class Parent2:
+    def show2(self):
+        print("This is second parent class")
+
+class Child(Parent1,Parent2):
+    def display(self):
+       print("This is a child class that inherit properties and methods from parent class")
+       print(f"{self.name}")
+
+c1 = Child()
+c1.show("Rakesh")
+c1.show2()
+c1.display()
+
+```
+<br>
+
+3. <b>Multilevel Inheritance :</b>
+<br>
+Multilevel inheritance is a type of inheritance in which a class is derived from another derived class, forming a chain of inheritance. <br>
+Example :
+<br>
+GrandParent -> Parent -> child
+<br>
+
+Syntax:
+
+```bash
+
+# Base/ Parent class
+class A:
+    pass
+
+# Intermediate class
+class B(A):
+    pass
+
+# Derived/child class
+class C(B):
+    pass
+
+```
+<br>
+
+Example:
+
+```bash
+
+class GrandParent:
+    def __init__(self,grandfathername):
+        self.grandfathername=grandfathername
+
+class Parent(GrandParent):
+    def __init__(self,fathername,grandfathername):
+        self.fathername=fathername
+        # call the constructor of GrandParent
+        GrandParent.__init__(self,grandfathername)
+        
+class Child(Parent):
+    def __init__(self,sonname,fathername,grandfathername):
+        self.sonname=sonname
+          # call the constructor of Parent
+        Parent.__init__(self,fathername,grandfathername)
+      
+    def printname(self):
+        print("Grandfather Name:",self.grandfathername)
+        print("Father Name:",self.fathername)
+        print("Child Name:",self.sonname)
+        
+c1 = Child("Mohan","Sohan","Rohan")
+c1.printname()
+
+```
+<br>
+
+<b>Flow Chart of This Program :</b>
+
+```bash
+┌───────────────────────────┐
+│        Program Start      │
+└─────────────┬─────────────┘
+              │
+              ▼
+┌───────────────────────────┐
+│  Class GrandParent Loaded │
+└─────────────┬─────────────┘
+              │
+              ▼
+┌───────────────────────────┐
+│    Class Parent Loaded    │
+└─────────────┬─────────────┘
+              │
+              ▼
+┌───────────────────────────┐
+│     Class Child Loaded    │
+└─────────────┬─────────────┘
+              │
+              ▼
+┌───────────────────────────┐
+│  Object Creation          │
+│  c1 = Child("Mohan",      │
+│             "Sohan",      │
+│             "Rohan")      │
+└─────────────┬─────────────┘
+              │
+              ▼
+┌───────────────────────────┐
+│ Child.__init__() called   │
+│ self.sonname = "Mohan"    │
+└─────────────┬─────────────┘
+              │
+              ▼
+┌───────────────────────────┐
+│ Parent.__init__() called  │
+│ self.fathername="Sohan"  │
+└─────────────┬─────────────┘
+              │
+              ▼
+┌───────────────────────────┐
+│ GrandParent.__init__()    │
+│ self.grandfathername=    │
+│ "Rohan"                  │
+└─────────────┬─────────────┘
+              │
+              ▼
+┌───────────────────────────┐
+│ c1.printname() called     │
+└─────────────┬─────────────┘
+              │
+              ▼
+┌───────────────────────────┐
+│ Print Grandfather Name    │
+│ Print Father Name         │
+│ Print Child Name          │
+└─────────────┬─────────────┘
+              │
+              ▼
+┌───────────────────────────┐
+│        Program End        │
+└───────────────────────────┘
+```
+<br>
+
+4. <b>Hierarchical Inheritance :</b>
+<br>
+Hierarchical inheritance is a type of inheritance in which multiple child classes inherit from a single parent class.
+In simple term there is One parent class and multiple child class.
+<br>
+
+Syntax:
+
+```bash
+class Parent:
+    pass
+
+class Child1(Parent):
+    pass
+
+class Child2(Parent):
+    pass
+
+```
+<br>
+
+Exmaple:
+
+```bash
+
+class Person:
+    def show(self):
+        print("I am a person")
+
+class Student(Person):
+    def role1(self):
+        print("I am a student")
+
+class Teacher(Person):
+    def role2(self):
+        print("I am a teacher")
+
+s = Student()
+t = Teacher()
+
+s.show()
+s.role1()
+
+t.show()
+t.role2()
+
+```
+<br>
+
+5.<b>Hybrid Inheritance :</b>
+<br>
+Hybrid inheritance is a type of inheritance that combines two or more types of inheritance (such as multiple, multilevel, or hierarchical) in a single program.
+<br>
+
+Syntax:
+
+```bash
+class A:
+    pass
+
+class B(A):
+    pass
+
+class C(A):
+    pass
+
+class D(B, C):
+    pass
 
 ```
