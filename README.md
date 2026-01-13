@@ -2049,9 +2049,9 @@ class Employee(Person):
 ```
 <br>
 Now we have successfully added the __init__() function, and kept the inheritance of the parent class, and we are ready to add functionality in the __init__() function.
-<br>
+<br><br>
 
-<b>Use of super() Function :</b>
+<b>Use of super() Function  :</b>
 Python also has a super() function that will make the child class inherit all the methods and properties from its parent:
 <br>
 
