@@ -87,3 +87,104 @@ print(df)
 
 ```
 
+# Basic operations to view Data 
+
+```bash
+df.head()      # first 5 rows
+df.tail()      # last 5 rows
+df.shape       # rows, columns
+df.columns     # column names
+df.info()      # data info
+df.describe()  # statistics
+
+```
+#  Handling Missing values in Pandas :
+<b>What are Missing Values?</b>
+<br>
+
+Missing values mean no data is present.
+<br>
+Common representations:
+
+```bash
+NaN
+
+None
+
+empty cells
+
+NULL (from databases)
+
+```
+<br>
+
+<b>Check entire DataFrame by using:</b>
+
+```bash
+
+df.isnull()
+```
+<br>
+
+isnull()  => If any Missing values in dataframe it shows True in place of missing values.
+<br>
+ If not any Missing values in dataframe it shows false in that place.
+<br>
+
+<b>Count missing values :</b>
+
+```bash
+df.isnull().sum()
+
+```
+<br>
+
+<b>Percentage of missing values :</b>
+
+```bash
+
+(df.isnull().sum() / len(df)) * 100
+
+```
+# Fill Missing Values (Imputation) :
+
+```bash
+
+# Fill with a fixed value
+
+df.fillna(0)
+
+
+# Fill column-wise
+
+df["Marks"].fillna(50, inplace=True)
+
+# Fill with Mean (Numeric Data)
+df["Marks"].fillna(df["Marks"].mean(), inplace=True)
+
+# Fill with Median (Better for Outliers)
+df["Marks"].fillna(df["Marks"].median(), inplace=True)
+
+# Fill with Mode (Categorical Data)
+df["Grade"].fillna(df["Grade"].mode()[0], inplace=True)
+
+```
+
+# Aggregation and Group By in Pandas"
+Aggregation means combining multiple values into a single value.
+<br><br>
+Examples: sum, mean, count, max, min
+<br>
+
+<b>Basic Aggregation on a Column :</b>
+
+```bash
+
+df["Marks"].sum()
+df["Marks"].mean()
+df["Marks"].max()
+df["Marks"].min()
+df["Marks"].count()
+
+```
+
