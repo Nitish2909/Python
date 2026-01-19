@@ -573,7 +573,7 @@ There are two methods:
 
 Exmaple :
 
-# flatten() method :   
+# flatten() method :   It retun a copy 
 
 import numpy as np 
 
@@ -589,11 +589,11 @@ print(flat_arr)       # Changes in flat_arr do NOT affect the original array.
 
 
 
-2. ravel() method => This method Returns a view (not a copy) whenever possible.
+2. ravel() method => This method Returns a view (not a copy) whenever possible.This method change original array.
 
 Example :
 
-# ravel() method :
+# ravel() method : It retun a view
 
 import numpy as np 
 
@@ -621,6 +621,179 @@ output :
 """
 
 ```
+
+# Array Modification :
+Array modification means changing values, shape, or structure of a NumPy array after it is created.
+<br>
+
+<b>Here are many ways to modify an array understand with example :</b>
+
+```bash
+
+import numpy as np 
+
+arr = np.array([10,20,30,40,50,60,70])
+
+# 1. Modify Single Element (Indexing)
+arr[1]=100
+print(arr) # [ 10 100  30  40  50  60  70]
+
+
+#2. Modify Multiple Elements (Slicing)
+# array[start:end-1]
+arr[1:3] = 1
+print(arr) #[10  1  1 40 50 60 70]
+
+
+# 3. Boolean Indexing
+arr[arr >40] = 22
+print(arr) #[10  1  1 40 22 22 22] 
+
+
+# 4. Replace Using where()
+# where(condition , value_if_true, value_if_false)
+new_arr= np.where(arr % 2 ==0 ,0 ,1)
+print(new_arr)   #[0 1 1 0 0 0 0]
+
+
+# 5. Append Elements
+# np.append(array,value)
+append_element= np.append(arr,100) # does not change original array
+print(append_element) #[ 10   1   1  40  22  22  22 100]
+
+
+# 6. Insert Elements
+# np.insert(array,indexNo,value)
+insert_element= np.insert(arr,1,200)
+print(insert_element) #[ 10 200   1   1  40  22  22  22]
+
+# 7. Delete elements
+# np.delete(array,indexNo)
+print(arr) # [10  1  1 40 22 22 22]
+
+arr2 = np.delete(arr,2) # [10  1 40 22 22 22]
+print(arr2)
+
+
+```
+<b>Splitting Arrays:</b>
+<br>
+Splitting means dividing one array into multiple smaller arrays.
+<br>
+
+<b>Syntax :</b>
+
+```bash
+np.split(array, number of array dividing)
+
+```
+<br>
+
+<b>Example:</b>
+
+```
+# 1. np.split() => it split(divide) an array into equal parts.
+
+# splitting an Array :
+
+import numpy as np
+
+# splitting a 1D array
+arr = np.array([10,20,30,40,50,60,70,80])
+print(np.split(arr,2))
+
+# splitting a 2D array 
+arr_2d = np.array([[20,30,40],
+                   [50,60,70],
+                   [1,2,3]])
+
+print(np.split(arr_2d,3))
+
+
+```
+
+# Broadcasting in NumPy :
+Broadcasting allows NumPy to perform operations on arrays of different shapes without using loops.
+<br>
+
+<b>Rules of Broadcasting :</b>
+
+```bash
+# RULES :
+NumPy compares array shapes from right to left (last dimension first).
+
+Rule 1 => Dimensions must be equal. Means if the size of dimension are the same, they are compatible.
+
+Example:
+
+
+# Rule 1: Dimensions must be equal
+
+
+import numpy as np
+
+a = np.array([[30,40,50],[60,70,80]])  # 2 x 3 
+
+b= np.array([[10,20,30],[5,10,15]]) # 2 x 3 
+
+print(a + b)
+
+
+# Rule 2 => One of the dimensions must be 1
+#If one of the dimensions is 1, NumPy stretches(expand) it to match the other.
+import numpy as np
+
+a = np.array([[30,40,50],[60,70,80]])  # 2 x 3 
+
+b= np.array([10,20,30]) # 1 x 3 
+
+print(a + b)
+
+```
+
+<b>Why Broadcasting is needed :</b>
+<br>
+Broadcasting is needed to perform operations on arrays of different shapes easily, efficiently, and without writing loops.
+
+```bash
+# Problem Without Broadcasting:
+NumPy normally works when array shapes are the same.
+
+import numpy as np
+
+a = np.array([30,40,40])
+b= np.array([10,20])
+
+print(a + b) # it shows an error because the shape of an array are not same
+
+
+
+# Broadcasting Solves This Problem :
+# solution : 1
+If you want element-wise addition, both arrays must have the same length.
+
+import numpy as np
+
+a = np.array([30,40,40])
+b= np.array([10,20,30])
+
+print(a + b)
+
+
+# solution : 2
+# Use a Scalar (Broadcasting Friendly) 
+If you want to add one value to all elements:
+
+import numpy as np
+
+a = np.array([30,40,40])
+
+print(a + 10)
+
+```
+
+
+
 
 
 
