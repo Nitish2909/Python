@@ -463,5 +463,168 @@ print(arr_2d[1, :]) # All columns, Row 1
 
 
 ```
+<br>
+
+<b>Boolean Indexing :</b>
+<br>
+Boolean indexing is used to filter data based on condition.
+<br>
+
+<b>Example :</b>
+
+```bash
+
+# Boolean indexing :
+
+import numpy as np
+
+arr = np.array([20,90,40,10,30])
+
+print(arr[arr > 10])
+
+print(arr[arr<40])
+```
+<br>
+
+<b>Fancy Indexing :</b>
+<br>
+Fancy indexing is used to Access multiple elements using a list of indices(indexes).
+<br>
+
+<b>Example :</b>
+
+```bash
+
+
+# fancy Indexing 
+
+arr = np.array([10,20,30,40,50,60,70,80,90])
+
+print(arr[[0,3,5,7]]) 
+
+```
+
+# Reshaping & Manipulating in NumPy :
+
+<b>Reshaping in NumPy :</b>
+<br>
+Reshaping is used to change the shape of an array without changing data.It does not create a copy.
+<br>
+for example you change an 1D array to 2D array with the help of reshape() method.
+<br>
+if dimensions does not match means Total element must match like (2 x 3) . if total elements does not match this method not works in this codition.
+
+<b>Syntax :</b>
+
+```bash
+
+array.reshape(rows , columns)
+
+
+```
+<br>
+
+<b>Example:</b>
+
+```bash
+
+
+import numpy as np 
+
+arr = np.array([10,20,30,40,50,60])
+
+reshaped_arr = arr.reshape(2,3)   # Total element must match like (2 x 3)
+
+print(reshaped_arr)   
+
+```
+<br>
+
+<b>Automatic Dimension(-1) :</b>
+<br>
+when using this NumPy automatically calculates the size.
+<br>
+
+Example :
+
+```bash
+
+# Automatic Dimension(-1)
+
+arr = np.array([10,20,30,40,50,60])
+
+reshaped_arr = arr.reshape(3,-1)
+
+print(reshaped_arr)
+
+```
+<br>
+
+<b>Flattening Arrays in NumPy:</b>
+<br>
+Flattening means converting a multi-dimensional array (2D / 3D) into a 1D array.
+<br>
+There are two methods:
+<br>
+
+```bash
+
+1. flatten() => This method returns a new copy of thr array.
+
+Exmaple :
+
+# flatten() method :   
+
+import numpy as np 
+
+arr = np.array([[10,20,30,40],
+                [50,60,70,80]])
+
+flat_arr = arr.flatten()
+
+print(flat_arr)       # Changes in flat_arr do NOT affect the original array.
+
+
+# output :   [10 20 30 40 50 60 70 80]
+
+
+
+2. ravel() method => This method Returns a view (not a copy) whenever possible.
+
+Example :
+
+# ravel() method :
+
+import numpy as np 
+
+arr = np.array([[10,20,30,40],
+                [50,60,70,80]])
+
+ravel_arr = arr.ravel()
+
+print(ravel_arr)    # output : [10 20 30 40 50 60 70 80]
+
+# If you want to modify array you can it.
+
+ravel_arr[0]= 100
+
+print(ravel_arr)   #output : [100  20  30  40  50  60  70  80] 
+
+print(arr) #  when you modify ravel_arr it also change original array 
+
+"""
+output :
+
+ [[100  20  30  40] 
+ [ 50  60  70  80]]
+
+"""
+
+```
+
+
+
+
+
 
 

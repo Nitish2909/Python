@@ -46,13 +46,32 @@ import numpy as np
 
 # arr[row_start:row_end, col_start:col_end]
 
-arr_2d = np.array([[20,30,40],
-                  [10,60,70],
-                  [10,20,30]])
+# arr_2d = np.array([[20,30,40],
+#                   [10,60,70],
+#                   [10,20,30]])
 
-print(arr_2d[1:3 , 1:3])
+# print(arr_2d[1:3 , 1:3])
 
-print(arr_2d[:,1]) # All rows, column 1
+# print(arr_2d[:,1]) # All rows, column 1
 
-print(arr_2d[1, :]) # All columns, Row 1
+# print(arr_2d[1, :]) # All columns, Row 1
+
+
+
+# Boolean indexing :
+
+import numpy as np
+
+arr = np.array([20,90,40,10,30])
+
+print(arr[arr > 10])
+
+print(arr[arr<40])
+
+
+# fancy Indexing 
+
+arr = np.array([10,20,30,40,50,60,70,80,90])
+
+print(arr[[0,3,5,7]]) 
 
