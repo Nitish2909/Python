@@ -289,3 +289,43 @@ plt.grid()	    Grid
 plt.show()	    Display plot
 
 ```
+
+# Matplotlib Object Oriented API 
+The object-oriented API gives direct control over Figure and Axes objects to create flexible and scalable plots.
+<br>
+There are Two key object of OOA :
+<br>
+
+```bash
+1. Figure => Figure means the entire canvas and windowx.It can contain multiple axes.
+
+2. Axes => Axes means the actual ploting area where data is drawn.
+
+# simple rule to remembers this :
+
+figure holds Axes,Axes holds plot.
+
+```
+<br>
+
+<b>Simple Example By Using OOA:</b>
+<br>
+
+```bash
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4]
+y = [10, 20, 30, 40]
+
+fig, ax = plt.subplots(figsize=(6,4))
+
+ax.plot(x, y, marker='o', color='blue', label='Sales')
+ax.set_title("Monthly Sales")
+ax.set_xlabel("Month")
+ax.set_ylabel("Revenue")
+ax.legend()
+ax.grid(True)
+
+plt.show()
+
+```
