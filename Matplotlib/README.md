@@ -329,3 +329,106 @@ ax.grid(True)
 plt.show()
 
 ```
+
+# Matplotlib Ploting Function :
+
+```bash
+
+from matplotlib.lines import lineStyles
+# syntax: x and y is mandatory others are optional
+# 1. plt.plot(x,y, color="color" ,linestyle="line_style", linewidth=value,marker="marker symbol",label="label name")
+
+# Example:
+import matplotlib.pyplot as plt
+
+months = [1,2,3,4,5,6,7]
+sales = [20000,30000,12000,4000,34000,1100,100000]
+
+plt.plot(months,sales,color='blue',linestyle='--',linewidth=2,marker='o',label='2026 sales data')
+# labeling
+plt.xlabel("Months")
+plt.ylabel("Sales Per Month")
+# for title
+plt.title("Monthly Sales Data Report")
+# legend : it makes a box 
+plt.legend()
+# grid(color="colorname",linestyle='line_style',linewidth:value) : It draw horizontal line or vertical line on background of of graph
+plt.grid(color='gray',linestyle=':',linewidth=1)
+
+plt.show()
+
+
+```
+
+# Bar Chart in matplotlib :
+A bar chart represents data using rectangular bars, where:
+<br>
+Height/length of bar = value
+<br>
+Used for comparison between categories.
+<br>
+
+Example:
+
+```bash
+# syntax:
+#plt.bar(x, height, color="colorname",width=value,label="label name")
+# vertical bar chart
+
+import matplotlib.pyplot as plt
+
+product = ['A','B','C','D','E']
+sales= [1000,1500,700,1200,1100]
+
+plt.bar(product,sales,color='orange',label='2025 sales')
+
+plt.xlabel('Products')
+plt.ylabel('Sales')
+
+plt.title('Product Sales Comparision')
+
+plt.legend()
+plt.show()
+
+```
+
+# Pie Chart :
+A pie chart shows how a whole (100%) is divided into parts.
+Each slice represents a proportion / percentage.
+<br>
+In simple words A pie chart shows how a whole is divided into parts using slices of a circle.
+<br>
+
+Syntax:
+
+```bash
+plt.pie(
+    data,                # values (numbers)
+    labels=labels,       # names of slices
+    autopct='%1.1f%%',   # show percentage
+    startangle=90,       # rotate chart
+    explode=explode,     # separate slice
+    colors=colors        # slice colors
+)
+plt.show()
+
+```
+
+Example:
+
+```bash
+
+import matplotlib.pyplot as plt
+
+regions = ['North','South',"East",'West']
+revenue = [3000,2000,1500,1000]
+
+explode = [0.1, 0, 0, 0]
+
+plt.pie(revenue,labels=regions,autopct='%1.1f%%',colors=['gold','skyblue','lightgreen','coral'] , explode=explode)
+plt.title("Revenue Contribution by Regions")
+
+plt.show()
+
+```
+
