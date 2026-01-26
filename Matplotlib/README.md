@@ -481,4 +481,214 @@ plt.show()
 
 ```
 
+# Scatter Plot :
+A scatter plot shows the relationship between two numerical variables using dots.
+<br>
+In Simple words Each dot represents one data point.
+<br>
+It helps to find the trends, relationship,outliners.
+<br>
+
+Syntax:
+
+```bash
+plt.scatter(x,y,color="color_name",marker="marker_style",label= "label name",s=value of size of dots)
+```
+<br>
+
+Example :
+
+```bash
+import matplotlib.pyplot as plt
+
+study_hours = [1, 2, 3, 4, 5]   # study hours
+marks = [40, 50, 60, 70, 80]  # marks
+
+plt.scatter(study_hours,marks,color="blue",marker="o",label="Student Data")
+plt.xlabel("Study Hours")
+plt.ylabel("Marks")
+plt.title("Study Hours vs Marks")
+plt.legend()
+plt.grid(True)
+plt.show()
+
+```
+# What does multiple datasets mean?
+Plot more than one set of data on the same graph or same figure.
+<br>
+Example:
+<br>
+Sales vs Profit
+<br>
+
+Boys vs Girls marks
+<br>
+
+Model-1 vs Model-2 accuracy
+<br>
+
+Advertisement budget vs Profit or Sales
+<br>
+
+Temperature vs ice-cream sales
+<br>
+
+Example:
+
+```bash
+# Example Using Multiple Scatter Datasets
+
+import matplotlib.pyplot as plt
+
+study_hours= [1,2,3,4,5,6,7,8]
+section_A_Marks =[80,75,78,90,88,76,87,95]
+section_B_Marks = [55,66,56,45,55,60,65,59]
+
+plt.scatter(study_hours,section_A_Marks,color="blue",label="Section A")
+plt.scatter(study_hours,section_B_Marks,color="orange",label="Section B")
+plt.xlabel("Study Hours")
+plt.ylabel("Marks")
+plt.title("Comparison of Two Section A and B")
+plt.legend()
+plt.grid(True)
+plt.show()
+
+```
+
+# Subplots and Layout Adjustments and (Essential subplots function in Matplotlib):
+<b>What is subplots ? </b>
+<br>
+Subplots allow you to display multiple plots (charts) inside a single figure.
+<br>
+In Simple words we can say that One window, many graphs.
+
+<b>Why do we need subplots? (Essential Purpose)</b>
+
+```bash
+
+Subplots are used when you want to:
+
+Compare multiple datasets side-by-side
+
+Show different views of the same data
+
+Organize plots neatly in one figure
+
+Instead of opening multiple windows, everything appears in one figure.
+
+```
+<br>
+
+Syntax:
+
+```bash
+fig, ax = plt.subplots(nrows, ncols,figsize=(width,height))
+
+# figsize is optional
+
+```
+Example:
+
+```bash
+
+import matplotlib.pyplot as plt
+
+fig,ax = plt.subplots(1,2,figsize = (10,5))
+
+x =[1,2,3,4,5]
+y= [10,20,30,40,50]
+
+ax[0].plot(x,y)
+ax[0].set_title("Line chart")
+
+ax[1].bar(x,y)
+ax[1].set_title("Bar chart")
+
+plt.tight_layout()
+plt.show()
+
+```
+<b>tight_layout()</b>
+<br>
+tight_layout() automatically adjusts spacing between subplots so labels, titles, and ticks dont overlap.
+<br>
+It is used in code just before show()
+<br>
+
+syntax:
+
+```bash
+plt.tight_layout()
+```
+<br>
+
+Example :
+
+```bash
+import matplotlib.pyplot as plt
+
+fig,ax = plt.subplots(1,2,figsize = (10,5))
+
+x =[1,2,3,4,5]
+y= [10,20,30,40,50]
+
+ax[0].plot(x,y,color="blue")
+ax[0].set_title("Line chart")
+
+ax[1].bar(x,y,color="green")
+ax[1].set_title("Bar chart")
+
+# this is used for set the title for figure(window)
+fig.suptitle("Comparison of Line Chart and Bar Chart")
+
+# this is used for fixes the labels and title of charts
+plt.tight_layout()
+plt.show()
+
+```
+<br>
+
+# savefig() Function :
+savefig() is used to save a Matplotlib figure as an image file.
+<br>
+In simple word It stores the graph on your computer.
+<br>
+Always call savefig() before show()
+<br>
+
+syntax:
+
+```bash
+plt.savefig(
+    "plot.png",
+    dpi=300,
+    bbox_inches='tight',
+    transparent=False
+)
+
+
+# dpi(dot per image) -> image quality
+# bbox_inches="tight" -> Removes extra white space
+# transparent ->  Transparent background
+# format -> File format (png, jpg, pdf)
+
+```
+<br>
+
+Example:
+
+```bash
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3]
+y = [10, 20, 30]
+
+plt.plot(x, y)
+plt.savefig("line_plot.png", dpi= 300, bbox_inches='tight')
+plt.show()
+
+```
+
+
+
 
