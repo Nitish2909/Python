@@ -431,4 +431,54 @@ plt.title("Revenue Contribution by Regions")
 plt.show()
 
 ```
+# Histogram Chart :
+A histogram shows how data is distributed by counting how many values fall into ranges (bins).This is used for continues numerical data.
+<br>
+<b>Important Points to Remember :</b>
+
+```bash
+Bins = groups/ranges
+
+Height of bar = frequency (count)
+
+No gap between bars
+
+Used for numerical data
+
+```
+
+Syntax:
+
+```bash
+plt.hist(data, bins=5)
+plt.show()
+
+```
+
+Example :
+
+```bash
+#Syntax:
+#plt.hist(data,bins=value,color="color_name",edgecolor="color_name")
+# bins means how many groups/ranges divide data
+# In this example bins are 6 means it divide marks in 6 groups
+
+import matplotlib.pyplot as plt
+
+Marks = [50,45,67,30,22,89,58,85,75,67,56,57,48,90,46,89,66,88,99]
+
+plt.hist(Marks,bins=6,color="purple",edgecolor="black")
+plt.title("Student Marks Distribution")
+plt.xlabel("Marks")
+plt.ylabel("Number of Students")
+
+plt.show()
+
+
+
+# here
+# height of bars means number of Students
+
+```
+
 
