@@ -689,6 +689,146 @@ plt.show()
 
 ```
 
+# plt.subplot()
+This matplotlib method divide the canvas/figure acoording to given rows and columns.
+<br>
 
+Syntax:
+
+```bash
+
+plt.subplot(nrows,ncolumns,index)
+
+# nrows -> Number of rows in the subplot grid.
+
+# ncolumns -> Number of columns in the subplot grid.
+
+# index -> Position of the current plot (starts from 1, not 0)
+
+```
+<br>
+
+Example:
+
+```bash
+import matplotlib.pyplot as plt
+
+plt.subplot(2, 2, 1)
+plt.plot([1, 2, 3])
+
+plt.subplot(2, 2, 2)
+plt.bar([1, 2, 3], [3, 5, 7])
+
+plt.subplot(2, 2, 3)
+plt.scatter([1, 2, 3], [4, 6, 8])
+
+plt.subplot(2, 2, 4)
+plt.hist([1, 2, 2, 3, 3, 3])
+
+plt.show()
+
+```
+
+# Working with Image :
+
+Import required Library:
+
+```bash
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+
+```
+<br>
+
+<b>Read / load an image :</b>
+
+```bash
+img = mpimg.imread('image.jpg')
+
+#The image is loaded as a NumPy array
+
+```
+<br>
+
+<b>How to Display the image :</b>
+
+```bash
+plt.imshow(img)
+plt.axis('off')   # hides x & y axis
+plt.show()
+
+```
+<br>
+
+<b>Change image size</b>
+
+```bash
+plt.figure(figsize=(6, 4))
+plt.imshow(img)
+plt.axis('off')
+plt.show()
+
+```
+<br>
+
+<b>Display multiple images by using subplot</b>
+
+```bash
+plt.subplot(1, 2, 1)
+plt.imshow(img)
+plt.title("Original")
+plt.axis('off')
+
+plt.subplot(1, 2, 2)
+plt.imshow(img, cmap='gray')
+plt.title("Grayscale")
+plt.axis('off')
+
+plt.show()
+
+```
+<br>
+
+<b>How to Save Image</b>
+
+```bash
+plt.imsave('output.png', img)
+
+# or save figure 
+plt.savefig("filename.extension")
+
+```
+<b>Basic image operations :</b>
+<br>
+
+<b>1. Crop Image</b>
+
+```bash
+cropped = img[50:200, 100:300]
+plt.imshow(cropped)
+plt.axis('off')
+plt.show()
+
+```
+<br>
+
+<b>Flip Image</b>
+
+```bash
+plt.imshow(img[:, ::-1])
+plt.axis('off')
+plt.show()
+
+```
+<br>
+
+<b>Adjust brightness </b>
+
+```bash
+plt.imshow(img * 0.5)   # darker
+plt.axis('off')
+plt.show()
+
+```
 
 
