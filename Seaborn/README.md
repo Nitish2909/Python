@@ -49,7 +49,7 @@ Syntax:
 
 ```bash
 
-sns.lineplot(x=None, y=None, data=None)
+sns.lineplot(x=(xlabel_Name), y=(ylabel_name), data)
 
 ```
 Example:
@@ -66,5 +66,100 @@ sns.lineplot(x="size", y="total_bill", data=df)
 plt.show()
 
 ```
+<br>
+
+<b>Bar chart </b>
+<br>
+It Shows average (mean) of numerical data for categories.
+<br>
+
+Syntax:
+
+```bash
+sns.barplot(x=(xlabel_Name), y=(ylabel_name), data)
+
+# x = for x-axis 
+# y = for y-axis
+# data = data
+
+```
+<br>
+
+Example:
+
+```bash
+
+# Bar Plot
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+df = sns.load_dataset("titanic")
+sns.barplot(x="class", y="fare", data=df)
+plt.show()
+
+```
+<br>
+
+# Histogram Chart :
+It Shows distribution of numerical data. 
+<br>
+
+Syntax:
+
+```bash
+sns.histplot(data, x, bins=value)
+
+```
+<br>
+
+Example:
+
+```bash
+# histogram Plot
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+df = sns.load_dataset("titanic")
+sns.histplot(x="age", data=df, bins=30, kde=True)
+plt.show()
+
+```
+# Heatmap (Correlation)
+What it is:
+<br>
+Shows correlation between numerical features
+<br>
+When to use:
+
+Feature relationship analysis
+<br>
+
+Syntax:
+
+```bash
+sns.heatmap(data, annot=False, cmap=None)
+
+```
+<br>
+
+Example:
+
+```bash
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+df = sns.load_dataset("titanic")
+corr = df.corr(numeric_only=True)
+sns.heatmap(corr, annot=True, cmap="coolwarm")
+plt.show()
+
+```
+
+# Distribution Plot :
+
+
+
 
 
