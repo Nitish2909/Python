@@ -158,8 +158,47 @@ plt.show()
 ```
 
 # Distribution Plot :
+A distribution plot is a graph used to show how data is spread (distributed) across different values. In simple words, it helps you see where most values lie, how often they occur, and the shape of the data.
+<br>
+Distribution plot is created for quantitative data. 
+<br>
+Here the quantitative means continuous values , numeric value,those value that not divide on category basis(like Gender,movie gener).
+<br>
+Example of quantitative data.
+<br>
+Age,Salary etc.
+<br>
 
+<b>Types of Distribution plot :</b>
 
+```bash
+1. sns.histplot()
 
+2. sns.jointplot()
 
+3. sns.pairplot()
 
+4. sns.rugplot()
+
+```
+<br>
+
+# Categorical Plot:
+ categorical plot is created for qualitative data.
+ <br>
+ Here qualitative data means categories based data like Gender, Movie Gener etc.
+<br>
+
+<b>Types of Categorical Plot :</b>
+<br>
+
+```bash
+1. sns.countplot()
+
+2. sns.barplot()
+
+3. sns.violinplot()
+
+4. snx.boxplot()
+
+```
