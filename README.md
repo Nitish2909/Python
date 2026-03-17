@@ -2537,6 +2537,255 @@ arr.count(20)
 print(arr)
 
 ```
+# String Manipulation in Python:
+String manipulation refers to the process of creating, modifying, analyzing, and processing strings using various operations and functions in a programming language.
+<br>
+In Python, a string is a sequence of characters enclosed within single quotes (' '), double quotes (" "), or triple quotes (''' '''). String manipulation allows programmers to perform different operations such as accessing characters, extracting substrings, changing case, searching, replacing, splitting, and formatting text.
+<br>
+
+<b>Key Operations in String Manipulation :</b>
+<br>
+
+<b>1.Accessing Characters(indexing) :</b>
+<br>
+Indexing is used to access a specific character in a string using its position.
+<br>
+
+Example:
+
+```bash
+
+text = "Python"
+print(text[0])  # P
+
+```
+<br>
+
+<b>2.Extracting Parts of String (Slicing):</b>
+<br>
+Slicing means Extract some parts from string.
+<br>
+
+Example:
+
+```bash
+str = "Python Programming"
+
+# Slicing
+print(str[0:7]) #Python
+
+```
+<br><br>
+
+<b>Subscript Operators in Python:</b>
+<br>
+The subscript operator [ ] is used to access characters of a string by specifying the index number inside the brackets.
+<br>
+Index numbers represent the position of characters in the string.
+<br>
+ The index is start from 0.
+<br>
+
+Example:
+
+```bash
+str = "Python Programming"
+print(str[0])
+print(str[1])
+print(str[2])
+
+```
+<br>
+
+<b>Other Functions on Strings in Python:</b>
+<br>
+Python provides many built-in functions and methods to perform operations on strings such as finding, replacing, counting, splitting, and formatting text. These functions help in string manipulation and text processing.
+<br>
+Below are some commonly used string functions.
+<br>
+
+<b>1. len () Function :</b>
+<br>
+This function returns the length of the string means number of characters.
+<br>
+
+Example:
+
+```bash
+str = "Python Programming"
+print(len(str)) # 18
+
+```
+<br>
+
+<b>2.upper() :</b>
+<br>
+The upper() method converts all characters of a string into uppercase letters.
+<br>
+
+Example:
+
+```bash
+str = "Python Programming"
+print(str.upper()) 
+```
+<br>
+
+<b>3.lower() :</b>
+<br>
+The lower() method converts all characters of a string into lowercase letters.
+<br>
+
+Example:
+
+```bash
+# lower()
+str = "PYTHON PROGRAMMING"
+print(str.lower()) 
+
+```
+<br>
+
+<b>4.replace() </b>
+<br>
+The replace() method replaces a word or character with another word or character.
+<br>
+
+Example:
+
+```bash
+str = "Hello World"
+print(str.replace("World", "Python"))
+```
+<br>
+
+<b>5. find() :</b>
+The find() method returns the position (index) of a substring in the string.
+<br>
+
+Example:
+
+```bash
+str = "Hello Python"
+print(str.find("Python"))
+```
+<br>
+
+<b>6. count() :</b>
+<br>
+The count() method counts how many times a character or word appears in a string.
+<br>
+
+Example:
+
+```bash
+str = "apple mango apple"
+print(str.count("apple"))
+
+```
+<br>
+
+<b>7. split() :</b>
+<br>
+The split() method divides a string into multiple parts and returns a list.
+<br>
+
+Example:
+
+```bash
+str= "Python Java C++"
+print(str.split())  # ['Python', 'Java', 'C++']
+
+```
+<br>
+
+<b>8. strip()  </b>
+<br>
+The strip() method removes extra spaces from the beginning and end of a string.
+<br>
+
+Example:
+
+```bash
+str = "  hello  "
+print(str.strip())
+
+```
+<br>
+
+# String Module in Python :
+The string module in Python is a built-in module that provides useful constants and helper functions for working with strings.
+<br>
+It contains predefined values such as letters, digits, punctuation characters, and whitespace, which are useful in text processing and validation.
+<br>
+To use the string module, we first need to import it.
+<br>
+
+<b>Important Constants in the String Module :</b>
+
+```bash
+
+Constants                    |  Definition
+                             |
+ 1. string.ascii_letters     | It returns all lowercase and uppercase letters.
+
+ 2. string.ascii_lowercase   | It returns all lowercase letters.
+
+ 3. string.ascii_uppercase   | It returns all uppercase letters.
+
+ 4. string.digits            | It Returns all numeric digits (0-9).
+
+ 5. string.hexdigits         | It Returns hexadecimal digits used in number systems.
+
+ 6. string.punctuation       | It Returns all punctuation characters
+
+ 7. string.whitespace        | It Returns all whitespace characters like space, tab, and newline.
+
+ 8. string.octdigits         | It Returns Octal digits used in number systems.
+                        
+ ```
+ <br>
+ 
+ Example  of all above constant modules:
+
+ ```
+ import string
+
+# string.ascii_letters 
+print(string.ascii_letters)  #abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+# string.ascii_uppercase 
+print(string.ascii_uppercase)  # ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+# string.ascii.lowercase 
+print(string.ascii_lowercase) # abcdefghijklmnopqrstuvwxyz
+
+# string.digits
+print(string.digits) # 0123456789
+
+# string.hexdigits
+print(string.hexdigits) # 0123456789abcdefABCDEF
+
+# string.punctuation
+print(string.punctuation) # !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+
+# string.octdigit
+print(string.octdigits)  # 01234567
+
+
+```
+<br>
+
+# Strings and Number System in Python:
+In Python, strings and numbers can be converted into each other using built-in functions. This is useful when working with user input, calculations, and formatted output.
+<br>
+
+
+
+
+
+
+
 
 
 
