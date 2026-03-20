@@ -853,6 +853,25 @@ In Python a list is a versatile data structure that allow you to store and organ
 <br>
 Lists are ordered, mutable (changeable), and can store different data types.
 <br><br>
+Properties of list:
+
+```bash
+
+1. Ordered  -> Items in a list maintain the order in which they are added.Elements are stored in
+               a specific sequence.You can access elements using index numbers.
+
+2. Mutable -> Lists can be modified after creation.You can add, remove, or update elements.
+
+3. Duplicate value -> Lists can contain same elements multiple times.
+
+4. Heterogeneous  -> A list can store different types of data in a single list.
+
+5. Supports Indexing and Slicing -> Lists allow accessing elements using index and extracting parts using slicing.
+
+6. Dynamic Size -> List size is not fixed.You can increase or decrease the size anytime.
+
+```
+<br><br>
 Example:
 
 ```bash
@@ -2778,6 +2797,14 @@ print(string.octdigits)  # 01234567
 
 # Strings and Number System in Python:
 In Python, strings and numbers can be converted into each other using built-in functions. This is useful when working with user input, calculations, and formatted output.
+<br>
+This topic mainly includes:
+<br>
+1. Format Functions
+<br>
+2. Converting Strings to Numbers
+<br>
+3. Converting Numbers to Strings (Vice Versa)
 <br>
 
 
