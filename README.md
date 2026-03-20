@@ -954,7 +954,24 @@ l1 = [1,8,7,2,21,15]
 A tuple is an immutable ordered collection of elements enclosed in paranthesis (). It is used to stored related data that should not be modified. 
 <br>
 Tuples are immutable, meaning their values cannot be changed after creation.
-<br><br>
+<br>
+
+```bash
+1. Ordered -> Tuples maintain the order of elements.Elements are stored in a fixed sequence.
+              Each element has a specific index position.
+
+2. Immutable -> Tuples cannot be changed after creation.No modification allowed.you Cannot add, remove, or update elements
+
+3.Allows Duplicate Values -> Tuples can contain same values multiple times.
+
+4. Heterogeneous -> Tuples can store different types of data.
+
+5. Supports Indexing and Slicing -> You can access elements using index and extract parts using slicing.
+
+6. Faster than List -> Tuples are faster than lists because they are immutable.
+
+```
+<br>
 Example:
 
 ```bash
