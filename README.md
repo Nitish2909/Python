@@ -899,12 +899,83 @@ print(number[1])
 
 <b> List Slicing:</b>
 
+List Slicing means getting a part or slice of list using indexes , without changing the original list.
+
 ```bash
 number =[1,2,4,5,3,2,3,5,8]
 
 print(number[1:6])  #[2, 4, 5, 3, 2]
 
 print(number[0:4])   #[1, 2, 4, 5]
+
+```
+
+<b>Basic List Operators :</b>
+
+```bash
+
+1. Concatenation(+) -> This Operator is used to combine two lists.
+
+Example:
+
+a = [1, 2]
+b = [3, 4]
+print(a + b)   # [1, 2, 3, 4]
+
+
+2. Repetition (*) -> This Operator is used to repeats list of elements.
+
+Example:
+
+a = [1, 2]
+print(a * 2)   # [1, 2, 1, 2]
+
+3. Membership (in / not in) -> This Operator is used to check element present in list or not.It returns Boolean value means if element is present in list it return true and if not then it return false.
+
+Example:
+lst = [10, 20, 30]
+print(20 in lst)   # True
+
+
+4. Indexing -> Indexing means accessing element from list by their index.
+
+Example:
+
+lst = [10, 20, 30]
+print(lst[1])   # 20
+
+
+5. Slicing -> Slicing means extracting parts of list using its index.
+
+Example:
+
+lst = [10, 20, 30, 40]
+print(lst[1:3])   # [20, 30]
+```
+
+<b>Replacing an Element (Updating a list) :</b>
+
+List are mutable, so we can change element in list directly. Therefore, you can update list in python by changing the value of an existing item using its index.
+<br>
+
+Example:
+
+```bash
+
+#1. update one item in List
+
+numbers = [10,20,30,40,50,60,70,80,90]
+#update one item in list
+numbers[1]= 100 # Replace 20 with 100
+print(numbers)
+
+
+# 2. #update multiple item in list 
+
+numbers = [10,20,30,40,50,60,70,80,90]
+#update multiple item in list
+numbers[1:5]= [200,300,400,500] #update value at index 1 to 4
+print(numbers)
 
 ```
 <b>Adding Elements to List</b>
