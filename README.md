@@ -2583,6 +2583,7 @@ In Python, a string is a sequence of characters enclosed within single quotes ('
 <br>
 
 <b>1.Accessing Characters(indexing) :</b>
+
 <br>
 Indexing is used to access a specific character in a string using its position.
 <br>
@@ -2598,6 +2599,7 @@ print(text[0])  # P
 <br>
 
 <b>2.Extracting Parts of String (Slicing):</b>
+
 <br>
 Slicing means Extract some parts from string.
 <br>
@@ -2614,6 +2616,7 @@ print(str[0:7]) #Python
 <br><br>
 
 <b>Subscript Operators in Python:</b>
+
 <br>
 The subscript operator [ ] is used to access characters of a string by specifying the index number inside the brackets.
 <br>
@@ -2634,6 +2637,7 @@ print(str[2])
 <br>
 
 <b>Other Functions on Strings in Python:</b>
+
 <br>
 Python provides many built-in functions and methods to perform operations on strings such as finding, replacing, counting, splitting, and formatting text. These functions help in string manipulation and text processing.
 <br>
@@ -2641,6 +2645,7 @@ Below are some commonly used string functions.
 <br>
 
 <b>1. len () Function :</b>
+
 <br>
 This function returns the length of the string means number of characters.
 <br>
@@ -2655,6 +2660,7 @@ print(len(str)) # 18
 <br>
 
 <b>2.upper() :</b>
+
 <br>
 The upper() method converts all characters of a string into uppercase letters.
 <br>
@@ -2668,6 +2674,7 @@ print(str.upper())
 <br>
 
 <b>3.lower() :</b>
+
 <br>
 The lower() method converts all characters of a string into lowercase letters.
 <br>
@@ -2683,6 +2690,7 @@ print(str.lower())
 <br>
 
 <b>4.replace() </b>
+
 <br>
 The replace() method replaces a word or character with another word or character.
 <br>
@@ -2696,6 +2704,7 @@ print(str.replace("World", "Python"))
 <br>
 
 <b>5. find() :</b>
+
 The find() method returns the position (index) of a substring in the string.
 <br>
 
@@ -2708,6 +2717,7 @@ print(str.find("Python"))
 <br>
 
 <b>6. count() :</b>
+
 <br>
 The count() method counts how many times a character or word appears in a string.
 <br>
@@ -2722,6 +2732,7 @@ print(str.count("apple"))
 <br>
 
 <b>7. split() :</b>
+
 <br>
 The split() method divides a string into multiple parts and returns a list.
 <br>
@@ -2736,6 +2747,7 @@ print(str.split())  # ['Python', 'Java', 'C++']
 <br>
 
 <b>8. strip()  </b>
+
 <br>
 The strip() method removes extra spaces from the beginning and end of a string.
 <br>
@@ -2750,6 +2762,7 @@ print(str.strip())
 <br>
 
 # String Module in Python :
+
 The string module in Python is a built-in module that provides useful constants and helper functions for working with strings.
 <br>
 It contains predefined values such as letters, digits, punctuation characters, and whitespace, which are useful in text processing and validation.
@@ -2813,11 +2826,14 @@ print(string.octdigits)  # 01234567
 <br>
 
 # Strings and Number System in Python:
+
 In Python, strings and numbers can be converted into each other using built-in functions. This is useful when working with user input, calculations, and formatted output.
 <br>
 This topic mainly includes:
 <br>
+
 <b>1.Format Functions :</b>
+
 <br>
 Format functions are used to insert values into strings in a structured way.There are some functions and methods that are used to insert values into Strings in a structured way.
 <br>
@@ -2855,6 +2871,7 @@ print("{:.2f}".format(pi))   # 3.14
 <br>
 
 <b>2.Converting Strings to Numbers</b>
+
 <br>
 This is used because User input is always string, so we convert it to number.
 
