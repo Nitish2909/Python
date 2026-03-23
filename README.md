@@ -978,6 +978,51 @@ numbers[1:5]= [200,300,400,500] #update value at index 1 to 4
 print(numbers)
 
 ```
+
+<b>Inserting Elements :</b>
+
+Inserting means adding new elements into a list.
+<br>
+There are three main method that is used to insert new element in a list.
+
+```bash
+1. append() -> This method add an element at end of the list.This method is used when you want add data sequentially.
+
+Example:
+
+
+numbers = [10,20,30,40,50]
+numbers.append(100)
+print(numbers)    # [10, 20, 30, 40, 50, 100]
+
+
+2. insert(index, value) -> This method Inserts element at a specific position.This method is used When you want to control position.
+
+Example:
+
+# insert(index, value)
+numbers = [10,20,30,40,50]
+numbers.insert(5, 60)
+print(numbers) # [10, 20, 30, 40, 50, 60]
+
+
+3. extend() -> This method add multiple element at end of the list.This method is used To merge lists or add many values at once.
+
+Example:
+
+# extend()
+numbers = [10,20,30]
+numbers.extend([40,50,60,70])
+print(numbers)  #[10, 20, 30, 40, 50, 60, 70]
+```
+
+<b>Removing Elements from List </b>
+
+Removing means deleting elements from a list.Python gives several ways to delete element from list.
+
+```bash
+
+```
 <b>Adding Elements to List</b>
 
 ```bash
