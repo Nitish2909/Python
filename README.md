@@ -2817,12 +2817,76 @@ In Python, strings and numbers can be converted into each other using built-in f
 <br>
 This topic mainly includes:
 <br>
-1. Format Functions
+<b>1.Format Functions :</b>
 <br>
-2. Converting Strings to Numbers
+Format functions are used to insert values into strings in a structured way.There are some functions and methods that are used to insert values into Strings in a structured way.
 <br>
-3. Converting Numbers to Strings (Vice Versa)
+
+```bash
+
+(1.) format() Method -> This method is used to create dynamic strings that is useful in output formatting.
+
+Example:
+
+name = "Nitish"
+age = 20
+print("My name is {} and I am {} years old".format(name, age))
+
+    here {} is a placeholder
+
+
+
+(2.) f-Strings (Modern Method) 
+
+Example:
+
+name = "Nitish"
+age = 20
+print(f"My name is {name} and I am {age} years old")
+
+
+(3.) Formatting Numbers
+
+Example:
+
+pi = 3.14159
+print("{:.2f}".format(pi))   # 3.14
+```
 <br>
+
+<b>2.Converting Strings to Numbers</b>
+<br>
+This is used because User input is always string, so we convert it to number.
+
+```bash
+
+(1.) int()
+
+Example:
+
+num = "10"
+print(int(num) + 5)   # 15
+
+(2.) float()
+
+Example:
+
+num = "10.5"
+print(float(num))   # 10.5
+
+```
+<br>
+
+<b>3. Converting Numbers to Strings (Vice Versa)</b>
+
+```bash
+num = 100
+text = str(num)
+print("Value is " + text)
+
+```
+
+
 
 
 
