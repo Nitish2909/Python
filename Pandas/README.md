@@ -107,6 +107,18 @@ In Simple word we can say that Data cleaning means making raw data usable and ac
 Clean Data is essentials for correct descision-making, Reliable Data analysis and accurate machine learning predections.
 <br>
 
+<b>There are three most important Techniques that are used for Data Cleaning:</b>
+
+```bash
+
+1. Handling Missing Values
+
+2. Removing Duplicates
+
+3. Correcting Data inconsistent
+
+```
+
 <b>Why Data Cleaning is Important:</b>
 
 ```bash
@@ -126,6 +138,114 @@ Clean Data is essentials for correct descision-making, Reliable Data analysis an
 
 8. Ensures consistency and reliability
 ```
+
+# 1. Handling Missing values in Pandas:
+Here the steps to how to Handling missing values:
+<br>
+
+<b>1. Import Required Library</b>
+
+```bash
+
+import pandas as pd
+import numpy as np
+```
+
+<b>2. Create / Load Dataset :</b>
+
+```bash
+data = {
+    "Name": ["Rohan", "Shyam", "Mohan", "Raju"],
+    "Age": [20, np.nan, 25, np.nan],
+    "Marks": [85, 90, np.nan, 95]
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+              # output:
+                  Name   Age   Marks
+              0   Rohan   20.0   85.0
+              1  Shyam   NaN   90.0
+              2  Mohan  25.0   NaN
+              3   Raju   NaN   95.0
+
+```
+
+<b>3.Detect or Identify Missing Values</b>
+
+```bash
+isnull()  => If any Missing values in dataframe it shows True in place of missing values.
+             If not any Missing values in dataframe it shows false in that place.
+
+
+Example:
+
+df.isnull()
+
+
+         # Output:      
+            Name	Age	    Marks
+        0	False	False	False
+        1	False	True	False
+        2	False	False	True
+        3	False	True	False
+
+
+```
+
+<b>4. Count missing values:</b>
+
+```bash
+df.isnull().sum()
+
+=> It helps to count number of missing value in each column.It also helps to understand which column need cleaning.
+
+     
+        # Output:
+          0
+         Name	0
+         Age	2
+        Marks	1
+
+```
+
+<b>5. Removing Missing Values :</b>
+
+```bash
+df.dropna() => It Removes rows that containing any NaN Values
+
+df.dropna(axis=0) => Removes rows(by default).
+
+df.dropna(axis=1) => Removes colums with missing values.
+
+
+```
+
+<b>6. Fill Missing Values(Imputation) :</b>
+
+```bash
+
+# Fill with a fixed value
+
+df.fillna(0)
+
+
+# Fill column-wise
+
+df["Marks"].fillna(50, inplace=True)
+
+# Fill with Mean (Numeric Data)
+df["Marks"].fillna(df["Marks"].mean(), inplace=True)
+
+# Fill with Median (Better for Outliers)
+df["Marks"].fillna(df["Marks"].median(), inplace=True)
+
+# Fill with Mode (Categorical Data)
+df["Grade"].fillna(df["Grade"].mode()[0], inplace=True)
+
+```
+
 #  Handling Missing values in Pandas :
 <b>What are Missing Values?</b>
 <br>
