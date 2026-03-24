@@ -246,6 +246,97 @@ df["Grade"].fillna(df["Grade"].mode()[0], inplace=True)
 
 ```
 
+# 2. Removing Duplicates :
+Removing duplicates is the process of identifying and eliminating repeated records or entries in a dataset so that each data point appears only once, ensuring accuracy, consistency, and unbiased analysis.
+<br>
+
+<b>Steps to Handling or Removes duplicate</b>
+<br>
+
+<b>1. Import Required Library :</b>
+
+```bash
+import pandas as pd
+
+```
+
+<b>2. Create Dataset with Duplicates</b>
+
+```bash
+data = {
+    "ID": [1, 2, 2, 3, 4, 4],
+    "Name": ["Ram", "Shyam", "Shyam", "Mohan", "Sita", "Sita"],
+    "Marks": [85, 90, 90, 88, 95, 95]
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+
+
+        # Output:
+           ID   Name  Marks
+        0   1    Ram     85
+        1   2  Shyam     90
+        2   2  Shyam     90
+        3   3  Mohan     88
+        4   4   Sita     95
+        5   4   Sita     95
+
+```
+
+<b>3. Detect Duplicate Rows</b>
+
+```bash
+# Check duplicates
+
+df.duplicated()
+
+=> It Returns True Duplicate for Rows (after the first occurance)
+
+
+
+     #Output :
+     
+             0
+        0	False
+        1	False
+        2	True
+        3	False
+        4	False
+        5	True
+
+```
+
+<b>4. Remove Duplicate Rows :</b>
+
+```bash
+
+# 1. Remove full duplicate rows
+df.drop_duplicates() 
+
+=> It Removes duplicate rows, keeping the first row by default (means keep first occurance from duplicate rows)
+
+   # Output:
+            ID	  Name	   Marks
+   0	    1	    Ram	      85
+   1	    2	   Shyam	  90
+   3	    3	   Mohan	  88
+   4	    4	   Sita	      95
+
+
+   # 2. Remove duplicates permanently
+
+   df = df.drop_duplicates() 
+
+
+```
+
+# 3. Data Inconsistencies :
+
+
+
+
 #  Handling Missing values in Pandas :
 <b>What are Missing Values?</b>
 <br>
