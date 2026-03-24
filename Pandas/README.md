@@ -98,6 +98,34 @@ df.info()      # data info
 df.describe()  # statistics
 
 ```
+
+# Data cleaning Techniques:
+Data cleaning (also called Data cleansing or Data Preprocessing) is the process of detecting, correcting, or removing inaccurate, incomplete, duplicate, inconsistent, or irrelevant data from a dataset to improve its quality and reliability.
+<br>
+In Simple word we can say that Data cleaning means making raw data usable and accurate for analysis.
+<br>
+Clean Data is essentials for correct descision-making, Reliable Data analysis and accurate machine learning predections.
+<br>
+
+<b>Why Data Cleaning is Important:</b>
+
+```bash
+1. Improves accuracy of results.
+
+2. Enhance data quality.
+
+3. Build Better Models.
+
+4. Saves time and efforts.
+
+5. Improves descision-making. 
+
+6. Prevents wrong conclusions.
+
+7. Increases model performance (in machine learning).
+
+8. Ensures consistency and reliability
+```
 #  Handling Missing values in Pandas :
 <b>What are Missing Values?</b>
 <br>
