@@ -333,9 +333,48 @@ df.drop_duplicates()
 ```
 
 # 3. Data Inconsistencies :
+Data Inconsistencies means that the same information appears in different or conflicting form within Dataset or across System.It make data confusing and hard to analyze.
+<br>
+
+Example:
+
+```bash
+If One record says "20/3/2026" and another says "03-20-2026" both may represent the same date, but the format Inconsistencies can cause errror during analysis.
+
+```
+
+# Data Transformation:
+Data transformation is the process of converting data into a suitable format or structure so that it can be effectively used for analysis, visualization, or machine learning.
+<br>
+It mainly includes:
+
+```bash
+1. Data Type Conversion
+2. Normalization
+3. Scaling
+
+```
+
+# 1. Data Type Conversion( type casting):
+Data type conversion or type casting is the process of changing a column's data type from one type to another (e.g., string -> integer) so that operations can be performed correctly.
+
+```bash
+
+data = {
+    "Age":["20","21","22","24","25"]
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+# check data type:
+df.dtypes
 
 
+# convert string into integer
+df['Age'] = df['Age'].astype('int64')
 
+```
 
 #  Handling Missing values in Pandas :
 <b>What are Missing Values?</b>
