@@ -634,3 +634,36 @@ aggfunc -> Aggregate function
 
 ```
 
+Example:
+
+```bash
+import pandas as pd
+
+data = {
+    "Department": ["IT", "IT", "HR", "HR"],
+    "Gender": ["M", "F", "M", "F"],
+    "Salary": [50000, 60000, 45000, 47000]
+}
+
+df = pd.DataFrame(data)
+
+table = pd.pivot_table(
+    df,
+    values="Salary",
+    index="Department",
+    columns="Gender",
+    aggfunc="mean"
+)
+
+print(table)
+
+```
+<b>output:</b>
+
+```bash
+Department     F	   M
+HR	        47000	 45000
+IT	        60000	 50000
+
+```
+
