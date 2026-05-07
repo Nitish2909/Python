@@ -470,5 +470,16 @@ df["Marks"].count()
 
 <b>1. Handling Missing Values/Data:</b>
 <br>
+Handling missing values/Data is the process of identifying, managing, replacing, or removing incomplete, null, or undefined data from a dataset to improve data quality and ensure accurate analysis.
+<br>
+In Pandas missing value/data is represented as:
+<br>
+1. NaN -> Not a number
+<br>
+2. None
+<br>
+3. NaT -> Missing Data/ Time Value
+<br>
 
+<b>Here are some important functions and Methods that is used for handling missing values in Pandas:</b>
 
