@@ -602,4 +602,35 @@ print(df)
 
 ```
 
+<b>4. Pivot Table :</b>
+<br>
+A Pivot Table in Pandas is a data summarization tool used to organize, analyze, and aggregate data from a large dataset into a meaningful table format.
+<br>
+It helps in Summarizing data , Calculating totals and averages, Comparing categories, Generating reports
+<br>
+
+<b>Syntax:</b>
+
+```bash
+pd.pivot_table(
+    data,
+    values,
+    index,
+    columns,
+    aggfunc
+)
+
+
+# parameters:
+data -> DataFrame
+
+values -> Column to aggregate
+
+index -> Row grouping
+
+columns -> Column grouping
+
+aggfunc -> Aggregate function
+
+```
 
