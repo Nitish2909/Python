@@ -911,6 +911,29 @@ arr = np.array([1,2,3,4,5,6,7,8,9,10])
 print(arr[1:5])   # [2 3 4 5]
 
 ```
+<b>5. Reshaping Arrays</b>
+<br>
+Reshaping arrays in NumPy means changing the shape or dimensions of an array without changing its actual data.It allows conversion between 1-D arrays, 2-D arrays, 3-D arrays and higher-dimensional structures.
+<br>
+
+Example:
+
+```bash
+import numpy as np
+ 
+arr = np.array([1,2,3,4,5,6,7,8,9])
+
+new_arr = arr.reshape(3,3)
+
+print(new_arr)   # output
+                  [[1 2 3]
+                   [4 5 6]
+                    [7 8 9]]
+
+
+```
+
+        
 
 
              
