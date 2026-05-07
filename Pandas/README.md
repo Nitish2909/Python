@@ -483,3 +483,123 @@ In Pandas missing value/data is represented as:
 
 <b>Here are some important functions and Methods that is used for handling missing values in Pandas:</b>
 
+```bash
+
+1. isnull() -> It is a method that check missing value in datasets. If any Missing values in dataframe it shows True in place of missing values.If not any Missing values in dataframe it shows false in that place.
+
+2. dropna() -> This method removes rows and columns that containing any missing values.
+
+3. fillna() -> This methods helps to fill missing values with a specified value.
+
+4.  sum() -> This methods counts how many missing values are present in a single column.
+
+```
+
+Example:
+
+```bash
+
+import pandas as pd
+import numpy as np
+
+data = {
+    "Name": ["Rohan", "Shyam", "Mohan", "Raju"],
+    "Marks": [85, 90, np.nan, 95]
+}
+
+df = pd.DataFrame(data)
+print("Original Data:")
+print(df)
+
+print("\nMissing Values:")
+print(df.isnull())
+
+print("\Count Missing Values")
+print(df.isnull().sum())
+
+df["Marks"].fillna(df["Marks"].mean(), inplace=True)
+
+```
+
+<b>2. GroupBy Operations :</b>
+<br>
+GroupBy operation in Pandas is a technique used to split data into groups based on one or more columns and then perform calculations or aggregate functions on each group.
+<br>
+It follows Simple concept of Split -> Apply -> Combine
+<br>
+In Simple words we can say that GroupBy operation in Pandas is a powerful feature used to organize data into groups and perform calculations like sum, mean, count, minimum, and maximum values efficiently. It is widely used in data analysis, reporting, and machine learning preprocessing.
+<br>
+
+<b>Syntax :</b>
+
+```bash
+df.groupby("column_name")
+
+```
+Example:
+
+```bash
+import pandas as pd
+
+data = {
+      "Department": ["IT", "HR", "IT", "HR"],
+      "Salary": [50000, 40000, 60000, 45000]
+}
+
+df = pd.DataFrame(data)
+
+result = df.groupby("Department")["Salary"].sum()
+# print(result)
+
+# You can aslo use more advance method that is agg()
+
+agg = df.groupby("Department")["Salary"].agg(["sum","min","max"])
+print(agg)
+
+```
+
+<b>3. MultiIndexing :</b>
+<br>
+MultiIndexing in Pandas is an advanced indexing technique that allows multiple levels of indexes in rows or columns of a DataFrame or Series.It is also called Hierarchical Indexing because data is organized in a hierarchy of multiple indexes.
+<br>
+
+Example:
+
+```bash
+import pandas as pd
+
+data = {
+    "Department": ["IT", "IT", "HR", "HR"],
+    "Employee": ["A", "B", "C", "D"],
+    "Salary": [50000, 60000, 45000, 47000]
+}
+
+df = pd.DataFrame(data)
+
+df = df.set_index(["Department", "Employee"])
+
+print(df)
+
+```
+<b>You can also Create multiple index </b>
+
+```bash
+import pandas as pd
+
+arrays = [
+    ["IT", "IT", "HR", "HR"],
+    ["A", "B", "C", "D"]
+]
+
+index = pd.MultiIndex.from_arrays(arrays)
+
+df = pd.DataFrame(
+    {"Salary": [50000, 60000, 45000, 47000]},
+    index=index
+)
+
+print(df)
+
+```
+
+
