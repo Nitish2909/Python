@@ -828,6 +828,32 @@ Broadcasting in NumPy is a technique that allows arithmetic operations to be per
 
 It automatically expands the smaller array to match the shape of the larger array during calculations.
 
+Example:
+
+```bash
+import numpy as np
+
+a = np.array([10,20,30,40])
+
+result = a + 100
+
+print(result)
+
+             # Output:
+             [110,120,130,140]
+
+```
+Here 100 is is automatically broadcasted to all elements of the array.Internally it behaves like:
+
+```bash
+[10,20,30,40] + [100,100,100,100]
+
+```
+
+<b>2. Vectorisation :</b>
+<br>
+
+
 
 
 
