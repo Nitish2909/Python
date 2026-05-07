@@ -852,6 +852,70 @@ Here 100 is is automatically broadcasted to all elements of the array.Internally
 
 <b>2. Vectorisation :</b>
 <br>
+Vectorization in NumPy is the process of performing operations on entire arrays at once instead of using loops to process elements one by one.
+It allows computations to be executed faster and more efficiently using optimized internal implementations.
+<br>
+
+Example:
+
+```bash
+import numpy as np
+
+a = np.array([10,20,30,40])
+b = 10
+
+print(a * b)
+
+```
+Here, multiplication is applied to the entire array at once.
+<br>
+
+<b>3. Indexing</b>
+<br>
+Indexing is used to accessing single  element from an array using its position(Index).Always remembers
+indexing is starts with 0.
+<br>
+
+Example:
+
+```bash
+
+import numpy as np;
+
+# for 1 D Array 
+arr = np.array([10,20,30,40,50])
+print(arr[1])
+
+# for 2D Array
+import numpy as np;
+arr_2D = np.array([[100,200,300],
+[400,500,600]])
+
+print(arr_2D[1][2])
+
+```
+
+<b>4. Slicing :</b>
+<br>
+Slicing in NumPy is the process of extracting a portion or subset of elements from an array using indexes.
+It allows access to multiple elements at once without using loops.
+<br>
+
+Example:
+
+```bash
+import numpy as np
+ 
+arr = np.array([1,2,3,4,5,6,7,8,9,10])
+
+print(arr[1:5])   # [2 3 4 5]
+
+```
+
+
+             
+
+
 
 
 
