@@ -791,6 +791,44 @@ a = np.array([30,40,40])
 print(a + 10)
 
 ```
+# Vectorisation in NumPy :
+Vectorisation means performing operations on entire arrays at once instead of using loops.
+<br>
+
+<b>Why Vectorisation Is Needed? </b>
+
+```bash
+
+# without Vectorisation use loops
+# Here use loops to solve
+import numpy as np 
+
+a = np.array([10,20,30,40])
+
+for i in range(len(a)):
+    a[i]= a[i] *2
+
+print(a)   
+
+
+# Now use vectorisation
+
+a = np.array([10,20,30,40])
+
+a = a *2
+
+print(a)
+
+```
+# Advance Features of Numpy:
+
+<b>1. Broadcasting :</b>
+<br>
+Broadcasting in NumPy is a technique that allows arithmetic operations to be performed on arrays of different shapes and sizes without explicitly resizing them.
+
+It automatically expands the smaller array to match the shape of the larger array during calculations.
+
+
 
 
 
