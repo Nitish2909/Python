@@ -1,7 +1,13 @@
 # What is Pandas :
-Pandas is a Python Library that is used for working with data sets. Pandas is used for data analysis , Data Manipulation ,Data cleaning ,Handling tables(rows and column). It provides fast and flexible tools to work with tabular data, similar to spreadsheets or SQL tables.
+Pandas is an open-source Python Library that is used for working with data sets. Pandas is used for data analysis , Data Manipulation ,Data cleaning ,Handling tables(rows and column). It provides fast and flexible tools to work with tabular data, similar to spreadsheets or SQL tables.
 <br>
 Pandas is used in data science, machine learning, finance, analytics and automation etc.
+<br>
+some core data structure:
+<br>
+1. Series(1D)
+<br>
+2. DataFrame
 <br><br>
 
 <b>How to install pandas :</b>
