@@ -3019,6 +3019,46 @@ print("Value is " + text)
 
 ```
 
+# Exception Handling in Python:
+Exception handling in python is a Mechanism or ways that allow you to handle errors that occur during the excution of a program.Instead of crashing the program Python allows you to catch these errors and handle them gracefully using special keywords like try, except, else, and finally. This helps make programs more stable and user-friendly.
+
+Why Exception Handling is Important
+
+```bash
+1. Prevents program from crashing
+2. Helps in debugging errors
+3. Provides meaningful error messages
+4. Ensures smooth execution of code
+5. Improve Code readability and maintainability
+
+```
+
+<b>Exception </b> -> An Exception is an error that occurs during program execution, which distrupts the normal flow of A Program.
+<br>
+Some Common Built-in Exception are:
+
+```bash
+Exception                Description                         Example
+
+ValueError             Invalid value                         int("abc")
+
+TypeError            Invalid operation for type               "hello" +5
+
+IndexError          sequence of index out of range           [1,2,3] [5]
+
+KeyError            Dictionary key not found                 {"a":1}["b"]
+
+FileNotFoundError   File doesn't exist                      open(abc.txt)
+
+ZeroDivisionError   Division by zero                         5/0
+
+ImportError            Module import failed          
+
+```
+
+
+
+
 
 
 
