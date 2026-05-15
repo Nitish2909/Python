@@ -3056,6 +3056,131 @@ ImportError            Module import failed
 
 ```
 
+Syntax of Exception handling:
+
+```bash
+try:
+    # Code that may cause an exception
+
+except:
+       # Code that runs if exception occur
+
+else:
+     # (Optional) Code that runs if no exception occurs in try block 
+
+finally:
+      # (Optional) Code that always runs
+
+
+```
+where :
+1. try: Put risky code here (the code that might cause an error).
+
+2. except:This block runs only if an error occurs in the try block.
+
+3. else: (Optional) Runs only if no error occurs.
+
+4. finally: (Optional) Runs no matter what (whethererror occurs or not). Useful
+for cleanup tasks like closing a file, releasing resources, etc.
+
+Example:
+
+```bash
+a = int(input("Enter First Number : "))
+b = int(input("Enter Second Number : "))
+
+try:
+    result = a / b
+    print("Result", result)
+except ZeroDivisionError:
+    print("Cannot Divide by Zero")
+except ValueError:
+    print("Invalid input")
+
+else:
+    print("Run only if no error occurs")
+
+finally:
+    print("Program ended.This runs always")
+
+
+```
+
+# Raising Exceptions
+Raising an exception in Python means manually generating an error using the raise keyword. It is used when you want to stop the program or signal that something has gone wrong based on a condition.
+
+syntax:
+
+```bash
+raise ExceptionType("Error message")
+
+```
+
+Example:
+
+```bash
+age = -1
+
+if age < 0:
+    raise ValueError("Age cannot be negative")
+
+
+# If the condition is true, Python will stop execution and show the error message.
+
+```
+
+# User-Defined Exceptions:
+User-defined exceptions are custom errors created by programmers using classes. In Python, you can define your own exception by creating a class that inherits from the built-in Exception class. These are useful when built-in exceptions are not enough to describe a specific problem in your program.
+
+User-defined exceptions make your programs more meaningful and easier to debug by allowing you to define errors specific to your application.
+
+Steps to Create a User-Defined Exception are :
+
+```bash
+
+1. Define a new class that inherits from the built-in Exception class. 
+
+2. Use the raise keyword to manually trigger the exception.
+
+3. Handle it using a try-except block.
+
+```
+
+Syntax:
+
+```bash
+
+class MyException(Exception):
+    pass
+
+```
+
+Example:
+
+```bash
+
+class InvalidAgeError(Exception):
+    pass
+
+try:
+    age = int(input("Enter Age : "))
+    if age < 0:
+        raise InvalidAgeError("Age cannot be negative")
+    else:
+        print("Age is ", age)
+
+except InvalidAgeError as e:
+    print("Error :", e)
+
+```
+
+# File Handling:
+
+
+
+
+
+
 
 
 
