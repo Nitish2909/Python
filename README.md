@@ -3202,6 +3202,87 @@ Makes programs more practical
 
 ```
 
+# Basic File Operation :
+
+<b>1. opening file :</b>
+<br>
+The Open function is used to open a file and return a file object,which allow you to read, write and modify the file.
+
+syntax:
+
+```bash
+file = open("filename.txt", "mode")
+
+
+
+where:
+filename -> The name (and path, if needed) of the file you want to open.
+
+mode -> Defines the purpose of opening the file (read, write, append, etc.).
+
+```
+
+Example:
+
+```bash
+file = open("hello.txt", "r")
+
+```
+
+<b>2. Closing a File :</b>
+<br>
+When we open a file in Python using open(), the file gets connected to the program.After finishing all reading/writing operations, we must disconnect the file usingclose() method.
+
+Syntax:
+
+```bash
+filename.close()
+
+```
+
+Example:
+
+```bash
+
+file = open("list.py","r")
+content = file.read()
+print(content)
+
+file.close()
+
+```
+
+<b>3. Reading File </b>
+<br>
+The read() method is used to read the content of a file.
+When you open a file in read mode ("r"), you can use read() to get its data as a string.
+
+syntax:
+
+```bash
+file_name.read()
+
+
+size (optional): number of characters/bytes to read. If not given, it reads the entire file.
+If a number is given, it reads only that many characters.
+
+```
+
+Example:
+
+```bash
+file = open("list.py","r")
+content = file.read()
+print(content)
+
+```
+
+
+
+
+
+
+
 
 
 
