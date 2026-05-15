@@ -3175,6 +3175,32 @@ except InvalidAgeError as e:
 ```
 
 # File Handling:
+File Handling in Python means working with files on your computer.File handling in Python is the process of creating, opening, reading, writing, and closing files. It allows programs to store data permanently in files instead of keeping it only in memory.
+<br>
+It is useful because Programs often need to store data permanently (not just in memory). Data stored in a file can be used later, even after the program ends.
+
+Why File Handling is Important
+
+```bash
+
+Stores data permanently
+
+Helps in reading large data from files
+
+Useful for logs, reports, and databases
+
+Makes programs more practical
+
+```
+
+<b>Types of Files</b>
+
+```bash
+1. Text Files (.txt) -> store text data
+
+2. Binary Files (.bin, .jpg, etc.) -> store binary data
+
+```
 
 
 
