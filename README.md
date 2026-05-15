@@ -3370,7 +3370,47 @@ print("Directory deleted")
 
 ```
 # sys Module 
+The sys module in Python provides access to system-specific parameters and functions. It is mainly used to interact with the Python interpreter, such as handling command-line arguments, exiting programs, and accessing system information.
 
+Features of SYS Module
+
+```bash
+Access command-line arguments
+Exit from program
+Get Python version
+Work with interpreter paths
+Handle runtime environment
+
+```
+
+<b>Example :</b>
+
+```bash
+import sys
+
+# 1. Display command-line arguments
+print("Command-line arguments:", sys.argv)
+
+# 2. Display Python version
+print("Python Version:", sys.version)
+
+# 3. Display system platform
+print("Platform:", sys.platform)
+
+# 4. Display module search path
+print("System Path:", sys.path)
+
+# 5. Display recursion limit
+print("Recursion Limit:", sys.getrecursionlimit())
+
+# 6. Change recursion limit
+sys.setrecursionlimit(1500)
+print("New Recursion Limit:", sys.getrecursionlimit())
+
+# 7. Exit program (uncomment to test)
+# sys.exit("Program terminated")
+
+```
 
 
 
