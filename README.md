@@ -3277,6 +3277,32 @@ print(content)
 
 ```
 
+# Writing into a File:
+The write() method is used to store data into a file.
+
+```bash
+Syntax
+file_name.write(string)
+
+
+where
+1. string :  The data you want to write into the file.
+2. write() returns the number of characters written.
+
+```
+
+Example:
+
+```bash
+file = open("data.txt","w")
+file.write("Hello World")
+file.write("File Handling using write().")
+
+file.close()
+
+```
+
+
 
 
 
