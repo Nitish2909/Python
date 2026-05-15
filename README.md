@@ -3309,6 +3309,67 @@ Navigate directories,
 Get system information,
 Work with file paths 
 
+<b>Common Functions of os Module with Example :</b>
+
+```bash
+
+import os
+
+# 1. Get Current Working Directory
+print("Current Directory:", os.getcwd())
+
+# 2. Create a New Directory
+os.mkdir("demo_folder")
+print("Directory 'demo_folder' created")
+
+# 3. List Files and Directories
+print("Contents of current directory:", os.listdir())
+
+# 4. Change Directory
+os.chdir("demo_folder")
+print("Changed Directory:", os.getcwd())
+
+# 5. Create a File inside directory
+with open("test.txt", "w") as f:
+    f.write("Hello OS Module")
+
+# 6. Check File Exists
+print("Does file exist?", os.path.exists("test.txt"))
+
+# 7. Get File Information
+print("File Size:", os.path.getsize("test.txt"))
+print("Is File?", os.path.isfile("test.txt"))
+print("Is Directory?", os.path.isdir("test.txt"))
+
+# 8. Rename File
+os.rename("test.txt", "new_test.txt")
+print("File renamed")
+
+# 9. Get Absolute Path
+print("Absolute Path:", os.path.abspath("new_test.txt"))
+
+# 10. Get File Name and Extension
+print("File Name:", os.path.basename("new_test.txt"))
+print("File Extension:", os.path.splitext("new_test.txt"))
+
+# 11. Go Back to Parent Directory
+os.chdir("..")
+print("Back to Directory:", os.getcwd())
+
+# 12. Rename Directory
+os.rename("demo_folder", "demo_new")
+print("Directory renamed")
+
+# 13. Remove File
+os.remove("demo_new/new_test.txt")
+print("File deleted")
+
+# 14. Remove Directory
+os.rmdir("demo_new")
+print("Directory deleted")
+
+```
+
 
 
 
