@@ -3302,6 +3302,14 @@ file.close()
 
 ```
 
+# OS Modulus:
+The os module in Python provides functions to interact with the operating system. It allows you to work with files, directories, environment variables, and system-level operations.Features of OS Module is
+Create, delete, and rename files/folders,
+Navigate directories,
+Get system information,
+Work with file paths 
+
+
 
 
 
