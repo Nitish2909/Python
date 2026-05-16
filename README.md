@@ -1774,7 +1774,36 @@ print(add(6, 7))
 
 <b>2. Complexity :</b>
 
-Complexity in programming refers to how difficult a program is to understand, write, and maintain. It increases when code is long, repetitive, or poorly organized. Using functions helps reduce complexity by breaking a large problem into smaller, manageable parts. This makes the program easier to read, debug, and modify. Lower complexity improves efficiency and helps programmers focus on solving one task at a time
+Complexity in programming refers to how difficult a program is to understand, write, and maintain. It increases when code is long, repetitive, or poorly organized. Using functions helps reduce complexity by breaking a large problem into smaller, manageable parts. This makes the program easier to read, debug, and modify. Lower complexity improves efficiency and helps programmers focus on solving one task at a time. 
+
+<b>3. Arguments</b>
+
+Arguments are values passed to a function when it is called. They provide input to the function so it can perform a specific task using different data each time. Arguments make functions flexible and reusable because the same function can work with various inputs. They are defined as parameters in the function definition and receive actual values during the function call.
+
+Example:
+
+```bash
+def multiply(a, b):   # a and b are parameters
+    return a * b
+
+print(multiply(3, 4))  # 3 and 4 are arguments
+
+```
+
+<b>4. Return Value </b>
+
+A return value is the output that a function sends back after completing its task. It allows the result of a function to be stored, used in further calculations, or displayed. The return statement is used to send this value back to the caller. Using return values makes programs more modular and efficient, as functions can produce results without directly printing them.
+
+Example:
+
+def square(x):
+    return x * x
+
+result = square(5)
+print(result)  # Output: 25
+
+```
+
 # Recursion in Python:
 Recursion is a technique in which a function calls itself to solve a problem by breaking it into smaller subproblems.
 <br>
