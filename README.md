@@ -1845,9 +1845,38 @@ print(add(3, 5))   # 3 and 5 are actual arguments
 ```
 
 # Named Arguments:
+Named arguments are values passed to a function by specifying the parameter names during the function call. Instead of relying on position, each argument is matched with its corresponding parameter using name=value. This improves readability and allows arguments to be passed in any order. Named arguments are especially useful when a function has many parameters or default values, making the code clearer and less error-prone.
 
+Example:
 
+```bash
+def student(name, age):
+    print(name, age)
 
+student(age=20, name="Nitish")   # order can change
+
+```
+
+# Program structure and design
+Program structure and design refers to organizing a program into logical parts to make it clear, efficient, and easy to maintain. A well-designed program uses functions, proper naming, and modular structure to reduce complexity and improve readability. It typically includes input, processing, and output sections. Good design also focuses on reusability, testing, and scalability, helping developers manage large programs effectively.
+
+Example:
+
+```bash
+def get_input():
+    return int(input("Enter number: "))
+
+def process(n):
+    return n * n
+
+def display(result):
+    print("Result:", result)
+
+num = get_input()
+res = process(num)
+display(res)
+
+```
 
 # Recursion in Python:
 Recursion is a technique in which a function calls itself to solve a problem by breaking it into smaller subproblems.
@@ -1864,6 +1893,7 @@ In Simple world we can say that Recursion is a process where a function calls it
 
 2. Recursive case => The function calls itself with a smaller problem.
 
+```
 <br>
 It is used to directly use a mathematical formula as function. 
 <br>
