@@ -1704,13 +1704,32 @@ Function names follow the same rules as variable names in Python:
 
 <b>Types Of Function :</b>
 <br>
-There are two types of function:
+There are three types of function:
 <br>
 <br>
 1. <b>Built-in function :</b> print() , len() , input().
 <br><br>
 2. <b>User-defined function :</b> This type of function is created by programmers.
-<br>
+<br><br>
+
+<b>3. lambda function :</b>
+
+A lambda function in Python is a small, anonymous (unnamed) function defined using the lambda keyword. It can take any number of arguments but has only one expression, whose result is automatically returned. Lambda functions are mainly used for short, simple operations where defining a full function using def is unnecessary.
+
+Syntax:
+
+```bash
+lambda arguments: expression
+
+```
+
+Example:
+
+```bash
+add = lambda a, b: a + b
+print(add(3, 4))   # Output: 7
+
+```
 
 <b>FUNCTION DEFINITION :</b>
 The part containing the exact set of instructions which are executed during the function call.
@@ -1803,6 +1822,29 @@ result = square(5)
 print(result)  # Output: 25
 
 ```
+
+# Formal Arguments:
+ Formal arguments (also called parameters) are the variables that appears in a function definition. They act as placeholders to receive values when the function is called. These variables do not hold actual data until the function executes. Formal arguments help define what kind of input a function expects, making the function flexible and reusable for different values without changing its structure.
+
+ Example:
+
+ ```bash
+ def add(a, b):   # a and b are formal arguments
+    return a + b
+
+```
+
+# Actual Arguments:
+Actual arguments are the real values or data passed to a function when it is called. These values are assigned to the corresponding formal arguments in the function definition. Actual arguments provide the input on which the function performs operations. They can be constants, variables, or expressions, making function calls dynamic and useful in different situations.
+
+Example:
+
+```bash
+print(add(3, 5))   # 3 and 5 are actual arguments
+
+```
+
+
 
 # Recursion in Python:
 Recursion is a technique in which a function calls itself to solve a problem by breaking it into smaller subproblems.
