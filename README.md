@@ -1746,6 +1746,35 @@ greet()
 
 
 ```
+
+# Design with Functions:
+Design with functions means organizing a program into small, reusable blocks called functions to reduce redundancy and manage complexity. Functions help break large problems into simpler parts, making code easier to read, test, and maintain. They support the use of arguments (inputs) and return values (outputs), enabling communication between different parts of a program while improving efficiency and code reusability.
+
+<b>1. Hiding Redundancy :</b>
+
+Hiding redundancy means avoiding repeated code by placing common or repeated logic inside a function and reusing it whenever needed. Instead of writing the same code multiple times, a single function is created and called whenever required. This reduces code duplication, makes programs shorter, improves readability, and simplifies maintenance. If changes are needed, they can be made in one place without affecting the entire program.
+
+Example:
+
+```bash
+# Without hiding redundancy
+print(2 + 3)
+print(4 + 5)
+print(6 + 7)
+
+# With hiding redundancy using function
+def add(a, b):
+    return a + b
+
+print(add(2, 3))
+print(add(4, 5))
+print(add(6, 7))
+
+```
+
+<b>2. Complexity :</b>
+
+Complexity in programming refers to how difficult a program is to understand, write, and maintain. It increases when code is long, repetitive, or poorly organized. Using functions helps reduce complexity by breaking a large problem into smaller, manageable parts. This makes the program easier to read, debug, and modify. Lower complexity improves efficiency and helps programmers focus on solving one task at a time
 # Recursion in Python:
 Recursion is a technique in which a function calls itself to solve a problem by breaking it into smaller subproblems.
 <br>
@@ -3411,6 +3440,9 @@ print("New Recursion Limit:", sys.getrecursionlimit())
 # sys.exit("Program terminated")
 
 ```
+
+
+
 
 
 
