@@ -2862,9 +2862,8 @@ str = "Python Programming"
 print(str[0:7]) #Python
 
 ```
-<br><br>
 
-<b>Subscript Operators in Python:</b>
+# Subscript Operators in Python:
 
 <br>
 The subscript operator [ ] is used to access characters of a string by specifying the index number inside the brackets.
@@ -2883,9 +2882,8 @@ print(str[1])
 print(str[2])
 
 ```
-<br>
 
-<b>Other Functions on Strings in Python:</b>
+# Other Functions on Strings in Python:
 
 <br>
 Python provides many built-in functions and methods to perform operations on strings such as finding, replacing, counting, splitting, and formatting text. These functions help in string manipulation and text processing.
