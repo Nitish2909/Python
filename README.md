@@ -1020,9 +1020,38 @@ print(numbers)  #[10, 20, 30, 40, 50, 60, 70]
 
 Removing means deleting elements from a list.Python gives several ways to delete element from list.
 
+Methods:
+
 ```bash
 
+remove() -> removes a specific value
+pop() -> removes element by index
+del -> deletes element or entire list
 ```
+Syntax:
+
+```bash
+
+list.remove(value)
+
+list.pop(index)
+
+del list[index]
+```
+
+Example:
+
+```bash
+nums = [10, 20, 30, 40]
+
+nums.remove(20)   # remove value
+nums.pop(1)       # remove index 1
+del nums[0]       # delete first element
+
+print(nums)  # [40]
+
+```
+
 <b>Adding Elements to List</b>
 
 ```bash
