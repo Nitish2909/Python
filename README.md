@@ -2895,6 +2895,58 @@ print(str[2])
 
 ```
 
+# Indexing in a String:
+Indexing in a string refers to the process of accessing individual characters of a string using their position number. In most programming languages like Python, indexing starts from 0, meaning the first character has index 0, the second has index 1, and so on. Negative indexing is also allowed, where counting starts from the end of the string. Indexing is useful for retrieving specific characters without modifying the entire string.
+
+Types of Indexing:
+
+```bash
+
+Positive Indexing: Starts from left to right (0, 1, 2, ...)
+Negative Indexing: Starts from right to left (-1, -2, ...)
+
+```
+
+syntax:
+
+```bash
+string[index]
+
+```
+
+Example:
+
+```bash
+text = "Python"
+print(text[0])   # Output: P
+print(text[-1])  # Output: n
+
+```
+
+# Slicing in String:
+Slicing in a string means extracting a part (substring) from the original string using a range of indices. It allows you to get multiple characters at once instead of just one. Slicing is very flexible because you can specify a starting index, ending index, and even a step value to skip characters. It is widely used in text processing and data manipulation.
+
+In Simple words we can say that slicing means extracting a parts of string or substring from the original string.
+
+syntax:
+
+```bash
+string[start:end:step]
+
+```
+
+Example:
+
+```bash
+text = "Python Programming"
+
+print(text[0:6])     # Output: Python
+print(text[7:18])    # Output: Programming
+print(text[::2])     # Output: Pto rgaig
+print(text[-11:-1])  # Output: Programmin
+
+```
+
 # Other Functions on Strings in Python:
 
 <br>
