@@ -2871,7 +2871,19 @@ The subscript operator [ ] is used to access characters of a string by specifyin
 Index numbers represent the position of characters in the string.
 <br>
  The index is start from 0.
-<br>
+
+ syntax:
+
+ ```bash
+
+string_variable[index]
+
+
+ where,
+string_variable:   the string you want to work with
+index:    position of the character
+
+```
 
 Example:
 
