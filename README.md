@@ -141,10 +141,11 @@ print("Welcome to Python")
 ```
 
 # indentation in python:
-Indentation means the spaces or tabs at the beginning of a line of code.In Python, indentation is very important because it is used to define blocks of code.
+Indentation in python means the spaces or tabs added at the beginning of a line of code.In Python, indentation is very important because it is used to define structure and blocks of code.
 <br>
- Unlike C, C++ or Java (which use { }), Python uses indentation to show structure or define the block of code.
+ Unlike C, C++ or Java (which use { }), Python uses indentation to show structure or define the block of code.The standard indentation in Python is 4 spaces.
 <br>
+Proper indentation makes the code clean, readable, and easy to understand.
 
 <b>Why Indentation is important:</b>
 
