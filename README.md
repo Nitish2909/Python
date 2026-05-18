@@ -3756,10 +3756,70 @@ turtle.done()
 ```
 
 # 3. Drawing Shapes 
+Drawing shapes in graphics means creating geometric figures like squares, rectangles, circles, and triangles using computer commands. In Python’s Turtle module, shapes are drawn by moving a virtual turtle in different directions using commands like forward, backward, and turning angles. It helps beginners understand programming logic, angles, and loops while visually creating designs and patterns.
 
+Syntax:
 
+```bash
+import turtle
+t = turtle.Turtle()
 
+t.forward(100)
+t.right(90)
 
+turtle.done()
+
+```
+
+Example:
+
+```bash
+ # square
+
+ import turtle
+t = turtle.Turtle()
+
+for i in range(4):
+    t.forward(100)
+    t.right(90)
+
+turtle.done()
+
+```
+
+# 4. Digital Images
+Digital images are pictures stored in electronic form on a computer. They are made up of tiny elements called pixels (picture elements), where each pixel contains color information. When combined, these pixels form a complete image. Digital images are widely used in websites, mobile apps, social media, and multimedia. Their quality depends on resolution, color depth, and file format.
+
+Syntax:
+
+```bash
+import turtle
+
+screen = turtle.Screen()
+screen.bgpic("image.gif")   # Display background image
+
+turtle.done()
+
+```
+
+# 5. Image File Formats:
+Image file formats define how images are stored and compressed in digital form. Different formats are used based on quality, size, and purpose.
+
+Common Types:
+
+```bash
+
+JPEG (JPG): Compressed, used for photos
+
+PNG: High quality, supports transparency
+
+GIF: Supports animation
+
+BMP: Uncompressed, large size
+
+SVG: Vector format, scalable without quality loss
+
+```
 
 
 
