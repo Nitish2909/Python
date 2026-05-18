@@ -1,7 +1,13 @@
 # Python:
 Python is a simple, high level ,general purpose and interpreted programming language.It is designed to be simple and easy to learn.One of the key Features of this language is their simple syntax , open source and its versibility.
 Python was created by <b>Guido van Rossum and first released in 1991</b>. It focuses on readability and uses simple, English-like syntax.
-Python is a Object Oriented Programming language.
+Python is a Object Oriented Programming language. Python is used for Web development
+Data analysis and visualization,
+Artificial intelligence and machine learning,
+Automation and scripting,
+Game development,
+Scientific computing.Because of its simple syntax and powerful performance it is the first choice for beginners and as well
+as experienced programmers. 
 
 # Featurse of Python:
 
