@@ -608,7 +608,7 @@ Operator         	Meaning      	    Example
    <=	            Less or equal	     5 <= 3
 ```   
 
-<b>4.Logical operators</b> -> Logical operators are used to combine conditional statements.
+<b>4.Logical operators</b> -> Logical operators are used to combine multiple conditions and return Boolean results.
 
 ```bash
 
@@ -3680,6 +3680,83 @@ print("New Recursion Limit:", sys.getrecursionlimit())
 # sys.exit("Program terminated")
 
 ```
+
+# Graphics :
+Graphics in computing refers to the creation, representation, and manipulation of visual content using a computer. It includes drawing shapes, images, colors, and animations to communicate information visually. Graphics are widely used in games, user interfaces, education, and digital media. In Python, graphics can be created using modules like the Turtle module, which helps beginners understand drawing and coordinate systems easily.
+
+# 1. Turtle Module:
+The Turtle module in Python is a simple graphics library used to draw shapes and patterns on the screen. It works like a virtual pen (turtle) that moves based on commands, making it useful for beginners to learn programming and graphics.The turtle acts like a pen that moves in different directions to draw shapes, lines, and patterns, making learning interactive and easy.
+
+Syntax:
+
+```bash
+import turtle          # Import turtle module
+t = turtle.Turtle()   # Create turtle object
+t.forward(100)        # Move forward
+turtle.done()         # Finish drawing
+
+```
+
+Example:
+
+```bash
+import turtle
+t = turtle.Turtle()
+t.forward(100)
+t.left(90)
+t.forward(100)
+turtle.done()
+```
+
+# 2. Drawing Colors :
+Drawing colors in graphics refers to the use of different colors to make shapes, lines, and designs more attractive and meaningful. In Python’s Turtle module, colors are applied to the pen (outline) and fill (inside of shapes). You can use color names like “red” or “blue” or define custom colors using RGB values. Colors help improve visualization and make graphics more engaging.
+
+<b>Types of Colors in Turtle :</b>
+
+```bash
+1. Pen Color (Outline Color)
+Used to color the lines drawn by the turtle.
+Set using color() or pencolor().
+
+
+2. Fill Color (Inside Shape Color)
+Used to fill shapes like circles, squares, etc.
+Set using fillcolor().
+
+
+3. RGB Colors
+Custom colors using Red, Green, Blue values (0–255).
+Requires setting color mode.
+
+```
+
+Syntax:
+
+```bash
+t.color("red")              # Set both pen and fill color
+t.pencolor("blue")          # Set pen color
+t.fillcolor("yellow")       # Set fill color
+
+turtle.colormode(255)       # Enable RGB mode
+t.color(255, 0, 0)          # Red color using RGB
+
+```
+
+Example:
+
+```bash
+import turtle
+t = turtle.Turtle()
+
+t.pencolor("green")
+t.forward(100)
+
+turtle.done()
+
+```
+
+# 3. Drawing Shapes 
+
 
 
 
