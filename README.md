@@ -69,6 +69,21 @@ Python can be used as a powerful calculator to perform basic and advanced mathem
 
 ```
 
+<b>Simple Calculator Example :</b>
+
+```bash
+a = int(input("Enter First Number : "))
+b= int(input("Enter Second Number : "))
+
+print("Addition :", a+b)
+print("Subtraction:", a-b)
+print("Multiplication :", a*b)
+print("Division :", a/b)
+print("Modules :", a%b)
+print("Exponentiation:", a**b)
+
+```
+
 # Python Shell:
 The Python Shell is an interactive environment where you can write and execute Python commands one line at a time and get instant output. Python Shell is also called interactive interpreter.
 <br>
