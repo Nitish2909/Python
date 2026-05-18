@@ -119,6 +119,27 @@ Hello Python
 >>> 10 + 5
 15
 ```
+
+<b>There are two Types of Python Shell :</b>
+
+```bash
+
+1. interactive Mode ->  In interactive mode, commands are entered one at a time and executed immediately.
+
+Example:
+
+>>> name = "Nitish"
+>>> print(name)
+Nitish
+
+2. Script Mode :
+In script mode, Python code is written in a file with the .py extension and executed together.
+
+Example file: program.py
+print("Welcome to Python")
+
+```
+
 # indentation in python:
 Indentation means the spaces or tabs at the beginning of a line of code.In Python, indentation is very important because it is used to define blocks of code.
 <br>
