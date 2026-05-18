@@ -53,15 +53,17 @@ Python can be used as a powerful calculator to perform basic and advanced mathem
 <b>How to use python as a calculator:</b>
 
 ```bash
-1. Open command prompt or Terminal.
+1. First install python in your system from official website of python.
 
-2. Type "python" . This open REPL(Read , Evaluate , Print ,Loop) in your cmd or terminal.
+2. Open command prompt or Terminal.
 
-3. Type any calculation just like:
+3. Type "python" . This open REPL(Read , Evaluate , Print ,Loop) in your cmd or terminal.
+
+4. Type any calculation just like:
    
  2+2 = 4
 
-4. For exit python type:
+5. For exit python type:
   
    exit()
 
