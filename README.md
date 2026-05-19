@@ -973,6 +973,7 @@ print(a + b)   # [1, 2, 3, 4]
 Example:
 
 a = [1, 2]
+
 print(a * 2)   # [1, 2, 1, 2]
 
 3. Membership (in / not in) -> This Operator is used to check element present in list or not.It returns Boolean value means if element is present in list it return true and if not then it return false.
