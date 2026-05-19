@@ -1889,6 +1889,7 @@ A return value is the output that a function sends back after completing its tas
 
 Example:
 
+```bash
 def square(x):
     return x * x
 
