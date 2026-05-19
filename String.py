@@ -26,29 +26,35 @@
 
 #Important Constants in the String Module
 
-import string
+# import string
 
-# string.ascii_letters 
-print(string.ascii_letters)  #abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+# # string.ascii_letters 
+# print(string.ascii_letters)  #abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
 
-# string.ascii_uppercase 
-print(string.ascii_uppercase)  # ABCDEFGHIJKLMNOPQRSTUVWXYZ
+# # string.ascii_uppercase 
+# print(string.ascii_uppercase)  # ABCDEFGHIJKLMNOPQRSTUVWXYZ
 
-# string.ascii.lowercase 
-print(string.ascii_lowercase) # abcdefghijklmnopqrstuvwxyz
+# # string.ascii.lowercase 
+# print(string.ascii_lowercase) # abcdefghijklmnopqrstuvwxyz
 
-# string.digits
-print(string.digits) # 0123456789
+# # string.digits
+# print(string.digits) # 0123456789
 
-# string.hexdigits
-print(string.hexdigits) # 0123456789abcdefABCDEF
+# # string.hexdigits
+# print(string.hexdigits) # 0123456789abcdefABCDEF
 
-# string.punctuation
-print(string.punctuation) # !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+# # string.punctuation
+# print(string.punctuation) # !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
 
-# string.octdigit
-print(string.octdigits)  # 01234567
+# # string.octdigit
+# print(string.octdigits)  # 01234567
 
+
+# Converting String -> Number
+
+num = "20"
+convert = int(num) 
+print(convert)
 
 
 
