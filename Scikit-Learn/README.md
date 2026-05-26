@@ -245,6 +245,9 @@ print("Predicted:", y_pred)
 ```
 
 # Data Analysis Tools:
+Data Analysis Tools are software applications or platforms used to collect, process, organize, visualize, and interpret data to find useful information and support decision-making. These tools help businesses, researchers, and organizations analyze large amounts of data quickly and accurately. They are widely used in business intelligence, statistics, artificial intelligence, finance, healthcare, and research.
+
+
 Scikit-learn (or sklearn) is one of the most popular and powerful Python libraries for data
 analysis and machine learning.It provides easy-to-use tools for :
 
@@ -390,10 +393,6 @@ model.fit(X, y)
 print(model.predict([[3]]))
 
 ```
-
-# Data Analysis Tools:
-Data Analysis Tools are software applications or platforms used to collect, process, organize, visualize, and interpret data to find useful information and support decision-making. These tools help businesses, researchers, and organizations analyze large amounts of data quickly and accurately. They are widely used in business intelligence, statistics, artificial intelligence, finance, healthcare, and research.
-
 
 # What-if Analysis Tool:
 What-if Analysis Tool is a decision-making and problem-solving technique used to predict possible outcomes by changing certain conditions or assumptions in a situation. It helps users understand “what will happen if” a particular action is taken. This tool is widely used in business, artificial intelligence, finance, planning, and risk management. By testing different scenarios, organizations can compare results, identify risks, and choose the best solution. For example, a company may use what-if analysis to estimate profit if product prices increase by 10%. It improves planning, supports better decisions, reduces uncertainty, and helps in analyzing future possibilities effectively.
