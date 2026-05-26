@@ -365,6 +365,42 @@ Last 3 points belong to another cluster
 
 ```
 
+# Classification:
+Classification is a supervised machine learning technique used to predict categories or class labels from input data. In classification, the model learns from labeled training data and then predicts the correct category for new data. It is widely used in spam detection, disease prediction, image recognition, fraud detection, and sentiment analysis. The output of classification is usually discrete values such as Yes/No, Pass/Fail, or Spam/Not Spam. Classification algorithms analyze patterns and relationships in data to make accurate decisions. Popular classification algorithms include Logistic Regression, Decision Tree, Random Forest, Support Vector Machine, and K-Nearest Neighbors.
+
+Example:
+
+```bash
+from sklearn.linear_model import LogisticRegression
+import numpy as np
+
+# Input data
+X = np.array([[1], [2], [3], [4]])
+
+# Output labels
+y = np.array([0, 0, 1, 1])
+
+# Create model
+model = LogisticRegression()
+
+# Train model
+model.fit(X, y)
+
+# Prediction
+print(model.predict([[3]]))
+
+```
+
+# Data Analysis Tools:
+Data Analysis Tools are software applications or platforms used to collect, process, organize, visualize, and interpret data to find useful information and support decision-making. These tools help businesses, researchers, and organizations analyze large amounts of data quickly and accurately. They are widely used in business intelligence, statistics, artificial intelligence, finance, healthcare, and research.
+
+
+# What-if Analysis Tool:
+What-if Analysis Tool is a decision-making and problem-solving technique used to predict possible outcomes by changing certain conditions or assumptions in a situation. It helps users understand “what will happen if” a particular action is taken. This tool is widely used in business, artificial intelligence, finance, planning, and risk management. By testing different scenarios, organizations can compare results, identify risks, and choose the best solution. For example, a company may use what-if analysis to estimate profit if product prices increase by 10%. It improves planning, supports better decisions, reduces uncertainty, and helps in analyzing future possibilities effectively.
+
+In Simple words we can say that What-if Analysis Tool means Checking how changes in input value affect the output of a model or calculation.
+
+
 
 
 
