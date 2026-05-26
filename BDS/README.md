@@ -162,7 +162,32 @@ Comparing student performance before and after training.
 
 <b>3. Chi-Square Test </b>
 
+A Chi-Square Test is an inferential statistical method used to determine whether there is a significant relationship or association between categorical variables. It compares observed data with expected data to check whether differences occur by chance or due to an actual relationship. The chi-square test is widely used in surveys, research, business analysis, medical studies, and social sciences. It works mainly with frequency data such as counts, categories, or groups. If the difference between observed and expected values is large, the variables are considered related. It helps researchers make decisions and test hypotheses using statistical significance.
 
+<b>Example:</b>
 
+```bash
+from scipy.stats import chi2_contingency
 
+# Observed frequency table
+data = [[30, 20],
+        [25, 25]]
+
+# Perform chi-square test
+chi2, p, dof, expected = chi2_contingency(data)
+
+# Display results
+print("Chi-Square Value:", chi2)
+print("P-Value:", p)
+print("Degrees of Freedom:", dof)
+print("Expected Frequencies:")
+print(expected)
+
+# Decision
+if p < 0.05:
+    print("Reject Null Hypothesis")
+else:
+    print("Accept Null Hypothesis")
+
+```
 
