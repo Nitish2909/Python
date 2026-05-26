@@ -191,3 +191,45 @@ else:
 
 ```
 
+# Predictive Modeling:
+Decision trees are supervised machine learning models used for classification and regression tasks. They represent decisions and possible outcomes in the form of a tree-like structure consisting of nodes, branches, and leaf nodes. A decision tree starts with a root node and splits data into smaller groups based on conditions or rules. Each branch represents a decision, and each leaf node represents the final output or prediction. Decision trees are simple to understand, easy to visualize, and widely used in business, healthcare, banking, and artificial intelligence for prediction and decision-making problems.
+
+
+
+# Example of Multiple linear regression
+
+```bash
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+
+# Sample dataset
+data = {
+    'Experience': [1, 2, 3, 4, 5],
+    'Education': [10, 12, 12, 16, 18],
+    'Salary': [30000, 35000, 40000, 50000, 60000]
+}
+df = pd.DataFrame(data)
+
+# Independent variables
+X = df[['Experience', 'Education']]
+y = df['Salary']
+
+# Split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+# Model
+model = LinearRegression()
+
+# Train
+model.fit(X_train, y_train)
+
+# Predict
+y_pred = model.predict(X_test)
+
+print("Predicted:", y_pred)
+
+```
+
+
+
