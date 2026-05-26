@@ -104,3 +104,65 @@ Example
 
 Online teaching improves student marks compared to offline teaching.
 
+
+<b>2. T- Test </b>
+
+A T-test is an inferential statistical method used to compare the means of two groups or compare a sample mean with a known value. It helps determine whether the difference between values is statistically significant or occurred by chance. T-tests are commonly used in research, education, medicine, and data analysis when the sample size is small and population variance is unknown.
+
+<b>Example:</b>
+
+```bash
+from scipy.stats import ttest_1samp
+
+# Sample marks
+marks = [72, 75, 78, 74, 77, 80, 73]
+
+# Perform one-sample t-test
+t_stat, p_value = ttest_1samp(marks, 70)
+
+# Display result
+print("T-Statistic:", t_stat)
+print("P-Value:", p_value)
+
+# Decision making
+if p_value < 0.05:
+    print("Reject Null Hypothesis")
+else:
+    print("Accept Null Hypothesis")
+
+```
+
+<b>Types of T-Test :</b>
+
+1. One-Sample T-Test:
+
+A one-sample t-test compares the mean of a single sample with a known or assumed population mean to check whether there is a significant difference between them.
+
+Example
+
+Checking whether the average marks of students differ from the school average of 70.
+
+2. Independent T-Test
+
+An independent t-test compares the means of two different independent groups to determine whether their averages are significantly different.
+
+Example
+
+Comparing marks of students from two different classes.
+
+3. Paired T-Test
+
+A paired t-test compares two related observations, such as before and after measurements on the same group, to identify significant changes.
+
+Example
+
+Comparing student performance before and after training.
+
+
+
+<b>3. Chi-Square Test </b>
+
+
+
+
+
