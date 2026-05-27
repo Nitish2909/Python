@@ -413,12 +413,29 @@ df.drop_duplicates()
 # 3. Data Inconsistencies :
 Data Inconsistencies means that the same information appears in different or conflicting form within Dataset or across System.It make data confusing and hard to analyze.
 <br>
+For Example If One record says "20/3/2026" and another says "03-20-2026" both may represent the same date, but the format Inconsistencies can cause errror during analysis.
+<br>
 
 Example:
 
 ```bash
-If One record says "20/3/2026" and another says "03-20-2026" both may represent the same date, but the format Inconsistencies can cause errror during analysis.
 
+import pandas as pd
+
+data = {
+    "City": ["Delhi", "delhi", "DELHI"],
+    "Marks": [85, 85, 85]
+}
+
+df = pd.DataFrame(data)
+
+# Standardize text
+df["City"] = df["City"].str.upper()
+
+# Remove duplicates
+df.drop_duplicates(inplace=True)
+
+print(df)
 ```
 
 # Data Transformation:
@@ -453,6 +470,26 @@ df.dtypes
 df['Age'] = df['Age'].astype('int64')
 
 ```
+
+# 2. Normalization
+Normalization is a data transformation technique used to scale values into a fixed range, usually between 0 and 1. It helps when data values have different ranges and improves machine learning performance.
+
+```bash
+data = [10, 20, 30, 40]
+
+min_val = min(data)
+max_val = max(data)
+
+normalized = []
+
+for x in data:
+    value = (x - min_val) / (max_val - min_val)
+    normalized.append(value)
+
+print(normalized)
+
+```
+
 
 #  Handling Missing values in Pandas :
 <b>What are Missing Values?</b>
