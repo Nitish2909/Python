@@ -1,5 +1,5 @@
 # What is NumPy :
-NumPy is a Python Library that is used for working with Arrays.
+NumPy (Numerical Python) is a powerful open-source Python library used for scientific computing and numerical data processing and it is also used for working with Arrays.
 Numpy was created in 2005 Travis Oliphant.It is an open source project that you can use it freely.
 <br>
 NumPy Stands for Numerical Python.
