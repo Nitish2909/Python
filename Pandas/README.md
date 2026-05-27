@@ -488,8 +488,33 @@ for x in data:
 
 print(normalized)
 
+
+
+
+
+
+
+#Output: 
+[0.0, 0.33, 0.67, 1.0]
+
 ```
 
+# 3. Scaling:
+Scaling is the process of adjusting data values so that different features have similar ranges or magnitudes. It helps algorithms work faster and more accurately.
+
+```bash
+import numpy as np
+
+# Original data
+data = np.array([10, 20, 30, 40, 50])
+
+# Min-Max Scaling
+scaled_data = (data - data.min()) / (data.max() - data.min())
+
+print("Original Data:", data)
+print("Scaled Data:", scaled_data)
+
+```
 
 #  Handling Missing values in Pandas :
 <b>What are Missing Values?</b>
