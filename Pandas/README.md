@@ -105,6 +105,78 @@ df.describe()  # statistics
 
 ```
 
+# Basic operations with pandas DataFrame.
+
+<b>1. Importing Pandas:</b>
+
+```bash
+import pandas as pd
+
+```
+
+<b>2. Creating DataFrame:</b>
+
+```bash
+import pandas as pd
+
+data = {
+    'Name': ['Aman', 'Amit', 'Riya'],
+    'Age': [25, 30, 22],
+    'City': ['Delhi', 'Mumbai', 'Pune']
+  }
+df = pd.DataFrame(data)
+print(df)
+
+```
+
+<b>3. Viewing Data :</b>
+
+```bash
+import pandas as pd
+
+data = {
+    'Name': ['Aman', 'Amit', 'Riya','Anu', 'Amrit', 'Priya'],
+    'Age': [25, 30, 22,21,19,24],
+    'City': ['Delhi', 'Mumbai', 'Pune','Karnal','Punjab','Panipat']
+  }
+df = pd.DataFrame(data)
+print(df)
+
+df.head()      # first 5 rows
+df.tail()      # last 5 rows
+df.shape       # rows, columns
+df.columns     # column names
+df.info()      # data info
+df.describe()  # statistics
+
+```
+
+<b>4. Selecting Data :</b>
+
+```bash
+
+import pandas as pd
+
+data = {
+'Name': ['Sushil', 'Amit', 'Riya', 'Neha'],
+'Age': [25, 30, 22, 28],
+'City': ['Delhi', 'Mumbai', 'Pune', 'Chennai']
+}
+df = pd.DataFrame(data)
+
+# Select data
+
+print("\n Select single column 'Name':\n", df['Name'])
+print("\n Select multiple columns 'Name' and 'City':\n", df[['Name', 'City']])
+print("\n Select rows where Age > 25:\n", df[df['Age'] > 25])
+
+```
+
+<b>5. Handling Missing Data:</b>
+
+<b>6. Aggregation or GroupBy Operations</b>
+
+
 # Data cleaning Techniques:
 Data cleaning (also called Data cleansing or Data Preprocessing) is the process of detecting, correcting, or removing inaccurate, incomplete, duplicate, inconsistent, or irrelevant data from a dataset to improve its quality and reliability.
 <br>
