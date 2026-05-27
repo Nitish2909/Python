@@ -192,42 +192,70 @@ else:
 ```
 
 # Predictive Modeling:
+Predictive modeling is a statistical and machine learning technique used to predict future outcomes using historical data. It analyzes patterns, relationships, and trends in existing data to estimate unknown or future values. Predictive modeling uses algorithms such as regression, classification, decision trees, and neural networks to make accurate predictions. It is widely used in business, healthcare, banking, weather forecasting, marketing, and artificial intelligence. The main goal of predictive modeling is to improve decision-making, reduce risks, and identify future opportunities. The model learns from past data and applies that knowledge to predict future events or behaviors.
+
+<b>1. Decision Trees :</b>
+
 Decision trees are supervised machine learning models used for classification and regression tasks. They represent decisions and possible outcomes in the form of a tree-like structure consisting of nodes, branches, and leaf nodes. A decision tree starts with a root node and splits data into smaller groups based on conditions or rules. Each branch represents a decision, and each leaf node represents the final output or prediction. Decision trees are simple to understand, easy to visualize, and widely used in business, healthcare, banking, and artificial intelligence for prediction and decision-making problems.
 
-
-
-# Example of Multiple linear regression
+Example:
+<br>
+Student Pass Prediction:
 
 ```bash
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
+from sklearn.tree import DecisionTreeClassifier
+import numpy as np
 
-# Sample dataset
-data = {
-    'Experience': [1, 2, 3, 4, 5],
-    'Education': [10, 12, 12, 16, 18],
-    'Salary': [30000, 35000, 40000, 50000, 60000]
-}
-df = pd.DataFrame(data)
+# Study hours and attendance
+X = np.array([
+    [2, 60],
+    [4, 70],
+    [6, 80],
+    [8, 90]
+])
 
-# Independent variables
-X = df[['Experience', 'Education']]
-y = df['Salary']
+# Pass(1) or Fail(0)
+y = np.array([0, 0, 1, 1])
 
-# Split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+# Create model
+model = DecisionTreeClassifier()
 
-# Model
-model = LinearRegression()
+# Train model
+model.fit(X, y)
 
-# Train
-model.fit(X_train, y_train)
+# Predict for new student
+prediction = model.predict([[5, 75]])
 
-# Predict
-y_pred = model.predict(X_test)
+print("Prediction:", prediction[0])
 
-print("Predicted:", y_pred)
+```
+
+<b>2. Logistic Regression :</b>
+
+Logistic regression is a supervised machine learning and statistical technique used for classification problems. It predicts the probability of a categorical outcome, usually binary outcomes such as Yes/No, True/False, or Spam/Not Spam. Unlike linear regression, logistic regression does not predict continuous values; instead, it predicts class probabilities using the logistic (sigmoid) function. It is widely used in healthcare, banking, marketing, fraud detection, and artificial intelligence. Logistic regression helps identify relationships between dependent and independent variables and makes predictions based on probability values between 0 and 1.
+
+Example:
+
+```bash
+from sklearn.linear_model import LogisticRegression
+import numpy as np
+
+# Study hours
+X = np.array([[1], [2], [3], [4], [5], [6]])
+
+# Pass(1) or Fail(0)
+y = np.array([0, 0, 0, 1, 1, 1])
+
+# Create model
+model = LogisticRegression()
+
+# Train model
+model.fit(X, y)
+
+# Predict for student studying 4.5 hours
+prediction = model.predict([[4.5]])
+
+print("Prediction:", prediction[0])
 
 ```
 
